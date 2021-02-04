@@ -1,0 +1,73 @@
+name: plot
+on:
+  push:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+  pull_request:
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+
+jobs:
+  gerbers:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: kicad-exports -c gerbers.kibot.yaml
+      uses: ./
+      with:
+        config: config/gerbers.kibot.yaml
+        dir: output/
+        board: '*.kicad_pcb'
+        schema: '*.sch'
+    - name: "check output: gerber"
+      run: |
+        test -f output/gerbers/*B_CrtYd.gbr && \
+        test -f output/gerbers/*F_CrtYd.gbr && \
+        test -f output/gerbers/*B_Cu.gbr && \
+        test -f output/gerbers/*F_Cu.gbr && \
+        test -f output/gerbers/*B_Mask.gbr && \
+        test -f output/gerbers/*F_Mask.gbr && \
+        test -f output/gerbers/*B_Paste.gbr && \
+        test -f output/gerbers/*F_Paste.gbr && \
+        test -f output/gerbers/*B_SilkS.gbr && \
+        test -f output/gerbers/*F_SilkS.gbr && \
+        test -f output/gerbers/*B_CrtYd.gbr && \
+        test -f output/gerbers/*F_CrtYd.gbr
+    - name: "check output: gerber"
+      run: |
+        test -f output/gerbers/*-NPTH_drill.gbr && \
+        test -f output/gerbers/*-NPTH_drill.drl && \
+        test -f output/gerbers/*-PTH_drill.gbr && \
+        test -f output/gerbers/*-PTH_drill.drl
+    - uses: actions/upload-artifact@v2
+      if: ${{ success() }}
+      with:
+        name: ${{ github.job }}
+        path: output/
+
+  plot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: kicad-exports -c plot.kibot.yaml
+      uses: ./
+      with:
+        config: config/plot.kibot.yaml
+        dir: output/
+        schema: '*.sch'
+        board: '*.kicad_pcb'
+    - name: "check output: plot"
+      run: |
+        test -f output/docs/img/test-top.svg && \
+        test -f output/docs/img/test-bottom.svg
+    - uses: actions/upload-artifact@v2
+      if: ${{ success() }}
+      with:
+        name: ${{ github.job }}
+        path: output/
