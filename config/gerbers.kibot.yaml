@@ -10,6 +10,13 @@ preflight:
   run_drc: true
   check_zone_fills: true
   ignore_unconnected: false
+  filters:
+    - filter: 'Ignore usb connector Pad too close to pad'
+      error: '19'
+      regex: 'Pad S_[^ ]* of J2 on All copper layers'
+    - filter: 'Ignore usb connector Drilled holes too close together'
+      error: '51'
+      regex: 'Pad S_[^ ]* of J2 on All copper layers'
 
 outputs:
   # For more information: https://github.com/INTI-CMNB/KiBoM
