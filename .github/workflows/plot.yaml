@@ -4,6 +4,8 @@ on:
     paths:
     - '**.sch'
     - '**.kicad_pcb'
+    - config/*
+    - .github/workflows/plot.yaml
   pull_request:
     paths:
       - '**.sch'
@@ -17,7 +19,7 @@ jobs:
       with:
         submodules: 'recursive'
     - name: kicad-exports -c gerbers.kibot.yaml
-      uses: ./
+      uses: nerdyscout/kicad-exports@v2.2
       with:
         config: config/gerbers.kibot.yaml
         dir: output/
@@ -56,7 +58,7 @@ jobs:
       with:
         submodules: 'recursive'
     - name: kicad-exports -c plot.kibot.yaml
-      uses: ./
+      uses: nerdyscout/kicad-exports@v2.2
       with:
         config: config/plot.kibot.yaml
         dir: output/
