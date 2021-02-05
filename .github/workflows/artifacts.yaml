@@ -85,9 +85,19 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: ./gerbers.zip
-        asset_name: gerbers.zip
-        asset_content_type: application/zip
+        asset_path: 'output/docs/img/atmxt2952td breakout-top.svg'
+        asset_name: top.svg
+        asset_content_type: image/svg+xml
+    - name: Upload bottom svg
+      id: upload-bottom-svg
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.release.outputs.upload_url }}
+        asset_path: 'output/docs/img/atmxt2952td breakout-bottom.svg'
+        asset_name: bottom.svg
+        asset_content_type: image/svg+xml
 
   release:
     name: Make release
