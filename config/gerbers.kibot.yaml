@@ -124,3 +124,10 @@ outputs:
         filename: '%i.%x'
       # [boolean=false] use the auxiliar axis as origin for coordinates
       use_aux_axis_as_origin: false
+
+  # Also make some SVGs.
+  - name: "SVG"
+    comment: 'svgs of each layer'
+    type: svg
+    dir: svgs
+    layers: copper
