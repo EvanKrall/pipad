@@ -143,7 +143,5 @@ jobs:
         with:
           tag_name: v${{ github.run_id }}
           release_name: Release ${{ github.run_id }} (${{ github.sha }})
-          draft: true
-          prerelease: true
     outputs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}
