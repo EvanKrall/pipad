@@ -167,4 +167,100 @@ Wire Wire Line
 	9500 3500 9500 3300
 Wire Wire Line
 	9500 3300 8900 3300
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 60262BE3
+P 7050 5800
+F 0 "J?" H 7130 5792 50  0000 L CNN
+F 1 "Conn_01x08" H 7130 5701 50  0000 L CNN
+F 2 "footprints:FF18-8A-R11AD-B-3H" H 7050 5800 50  0001 C CNN
+F 3 "~" H 7050 5800 50  0001 C CNN
+	1    7050 5800
+	1    0    0    -1  
+$EndComp
+Text Label 6850 5500 2    50   ~ 0
+intmic+
+Text Label 6850 5600 2    50   ~ 0
+intmic-
+Text Label 6850 5700 2    50   ~ 0
+tip
+Text Label 6850 5800 2    50   ~ 0
+ring2
+Text Label 6850 5900 2    50   ~ 0
+sleeve
+Text Label 6850 6000 2    50   ~ 0
+ring2_again
+Text Label 6850 6200 2    50   ~ 0
+ring1
+Wire Wire Line
+	4000 5500 4000 5100
+Wire Wire Line
+	4100 5600 4100 5100
+Wire Wire Line
+	4000 5500 6850 5500
+Wire Wire Line
+	4100 5600 6850 5600
+Wire Wire Line
+	6850 5700 6450 5700
+Wire Wire Line
+	6450 5700 6450 3350
+Wire Wire Line
+	6450 3350 6050 3350
+Wire Wire Line
+	6050 3550 6350 3550
+Wire Wire Line
+	6350 3550 6350 6200
+Wire Wire Line
+	6350 6200 6850 6200
+Wire Wire Line
+	6850 6000 6250 6000
+Wire Wire Line
+	6250 6000 6250 3450
+Wire Wire Line
+	6250 3450 6050 3450
+Wire Wire Line
+	6250 3450 6250 3250
+Wire Wire Line
+	6250 3250 6050 3250
+Connection ~ 6250 3450
+$Comp
+L Device:R R?
+U 1 1 60271543
+P 4700 5300
+F 0 "R?" V 4493 5300 50  0000 C CNN
+F 1 "2.2k" V 4584 5300 50  0000 C CNN
+F 2 "" V 4630 5300 50  0001 C CNN
+F 3 "~" H 4700 5300 50  0001 C CNN
+	1    4700 5300
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 5300
+Wire Wire Line
+	4850 5300 4850 5100
+$Comp
+L Device:C C?
+U 1 1 60271C8D
+P 5000 5400
+F 0 "C?" V 4748 5400 50  0000 C CNN
+F 1 "C" V 4839 5400 50  0000 C CNN
+F 2 "" H 5038 5250 50  0001 C CNN
+F 3 "~" H 5000 5400 50  0001 C CNN
+	1    5000 5400
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 5400
+Wire Wire Line
+	4850 5400 4850 5300
+Wire Wire Line
+	5150 5400 5150 5100
+Wire Wire Line
+	5150 5100 4950 5100
+Wire Wire Line
+	4550 5300 4550 5100
+Wire Wire Line
+	4850 5900 6850 5900
+Wire Wire Line
+	4850 5400 4850 5900
+NoConn ~ 6850 5800
+NoConn ~ 6850 6100
 $EndSCHEMATC
