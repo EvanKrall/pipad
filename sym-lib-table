@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TPA2006D1DRBR)(type Legacy)(uri ${KIPRJMOD}/symbols/TPA2006D1DRBR.lib)(options "")(descr ""))
   (lib (name TLV320AIC3104IRHBT)(type Legacy)(uri ${KIPRJMOD}/symbols/TLV320AIC3104IRHBT.lib)(options "")(descr ""))
+  (lib (name FSA2275UMX)(type Legacy)(uri ${KIPRJMOD}/symbols/FSA2275UMX.lib)(options "")(descr ""))
 )
