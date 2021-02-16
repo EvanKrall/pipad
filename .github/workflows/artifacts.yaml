@@ -15,8 +15,8 @@ jobs:
       with:
         config: config/gerbers.kibot.yaml
         dir: output/
-        board: '*.kicad_pcb'
-        schema: '*.sch'
+        board: 'i2s_soundcard.kicad_pcb'
+        schema: 'i2s_soundcard.sch'
     - name: "check output: gerber"
       run: |
         test -f output/gerbers/*B_CrtYd.gbr && \
@@ -99,8 +99,8 @@ jobs:
       with:
         config: config/plot.kibot.yaml
         dir: output/
-        schema: '*.sch'
-        board: '*.kicad_pcb'
+        schema: 'i2s_soundcard.sch'
+        board: 'i2s_soundcard.kicad_pcb'
     - name: "check output: plot"
       run: |
         test -f 'output/docs/img/i2s_soundcard-top.svg' && \
