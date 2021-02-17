@@ -123,4 +123,4 @@ outputs:
     comment: 'svgs of each layer'
     type: svg
     dir: svgs
-    layers: copper
+    layers: all
