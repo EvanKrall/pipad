@@ -87,21 +87,21 @@ jobs:
         asset_name: all_svgs.zip
         asset_content_type: application/zip
 
-  plot:
+  pcbdraw:
     runs-on: ubuntu-latest
     needs: [release]
     steps:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - name: kicad-exports -c plot.kibot.yaml
+    - name: kicad-exports -c pcbdraw.kibot.yaml
       uses: nerdyscout/kicad-exports@v2.2
       with:
-        config: config/plot.kibot.yaml
+        config: config/pcbdraw.kibot.yaml
         dir: output/
         schema: 'i2s_soundcard.sch'
         board: 'i2s_soundcard.kicad_pcb'
-    - name: "check output: plot"
+    - name: "check output: pcbdraw"
       run: |
         test -f 'output/docs/img/i2s_soundcard-top.svg' && \
         test -f 'output/docs/img/i2s_soundcard-bottom.svg'
