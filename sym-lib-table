@@ -3,4 +3,5 @@
   (lib (name TLV320AIC3104IRHBT)(type Legacy)(uri ${KIPRJMOD}/symbols/TLV320AIC3104IRHBT.lib)(options "")(descr ""))
   (lib (name FSA2275UMX)(type Legacy)(uri ${KIPRJMOD}/symbols/FSA2275UMX.lib)(options "")(descr ""))
   (lib (name TLV7111830DSER)(type Legacy)(uri ${KIPRJMOD}/symbols/TLV7111830DSER.lib)(options "")(descr ""))
+  (lib (name TPD4E02B04DQAR)(type Legacy)(uri ${KIPRJMOD}/symbols/TPD4E02B04DQAR.lib)(options "")(descr ""))
 )
