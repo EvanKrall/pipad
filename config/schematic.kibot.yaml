@@ -1,0 +1,15 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: docs

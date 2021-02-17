@@ -131,6 +131,38 @@ jobs:
         asset_name: bottom.svg
         asset_content_type: image/svg+xml
 
+  schematic:
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: mkdir -p output
+      run: mkdir -p output
+    - name: kicad-exports -c schematic.kibot.yaml
+      uses: nerdyscout/kicad-exports@v2.2
+      with:
+        config: config/schematic.kibot.yaml
+        dir: output/
+        board: 'i2s_soundcard.kicad_pcb'
+        schema: 'i2s_soundcard.sch'
+    - uses: actions/upload-artifact@v2
+      if: ${{ success() }}
+      with:
+        name: ${{ github.job }}
+        path: output/docs
+    - name: Upload pdf
+      id: upload-pdf
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.release.outputs.upload_url }}
+        asset_path: 'output/docs/i2s_soundcard-schematic.pdf'
+        asset_name: schematic.pdf
+        asset_content_type: application/pdf
+
   release:
     name: Make release
     runs-on: ubuntu-latest
