@@ -168,19 +168,19 @@ F 3 "~" H 9950 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6850 5500 2    50   ~ 0
-intmic+
+INTMIC_P
 Text Label 6850 5600 2    50   ~ 0
-intmic-
+INTMIC_N
 Text Label 6850 5700 2    50   ~ 0
-tip
+TIP
 Text Label 6850 5800 2    50   ~ 0
-ring2
+RING2
 Text Label 6850 5900 2    50   ~ 0
-sleeve
+SLEEVE
 Text Label 6850 6000 2    50   ~ 0
-ring2_again
+RING2_AGAIN
 Text Label 6850 6200 2    50   ~ 0
-ring1
+RING1
 Wire Wire Line
 	4000 5500 4000 5100
 Wire Wire Line
@@ -378,19 +378,19 @@ F 3 "" H 2800 950 50  0001 C CNN
 $EndComp
 Connection ~ 2800 950 
 Text Label 3700 750  0    50   ~ 0
-v1.8
+VCC1.8
 Text Label 3700 850  0    50   ~ 0
-v3.3
+VCC3.3
 Wire Wire Line
 	5100 2400 5100 2500
 Text Label 1100 1650 1    50   ~ 0
-vbat
+VBAT_3.7
 Text Label 1200 1650 1    50   ~ 0
-en2
+EN2
 Text Label 1000 1650 1    50   ~ 0
-en1
+EN1
 Text Label 7450 2800 2    50   ~ 0
-vbat
+VBAT_3.7
 $Comp
 L Connector_Generic:Conn_01x11 J4
 U 1 1 6035D713
@@ -466,43 +466,43 @@ F 3 "~" H 1550 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 2650 3250 0    50   ~ 0
-mclk
+MCLK
 Text Label 2650 3350 0    50   ~ 0
-bclk
+BCLK
 Text Label 2650 3450 0    50   ~ 0
-wclk
+WCLK
 Text Label 2650 3550 0    50   ~ 0
-din
+DIN
 Text Label 2650 3650 0    50   ~ 0
-dout
+DOUT
 Text Label 2650 3750 0    50   ~ 0
-scl
+SCL
 Text Label 2650 3850 0    50   ~ 0
-sca
+SCA
 Text Label 1800 2450 0    50   ~ 0
-iovdd
+IOVDD
 Text Label 9400 2900 0    50   ~ 0
-LOR+
+LOR_P
 Text Label 9400 3000 0    50   ~ 0
-LOR-
+LOR_N
 Text Label 9400 3200 0    50   ~ 0
-LOL-
+LOL_N
 Text Label 9400 3100 0    50   ~ 0
-LOL+
+LOL_P
 Text Label 7350 4400 1    50   ~ 0
-~shutdown
+~SHUTDOWN
 Text Label 7250 4500 1    50   ~ 0
-sel
+SEL
 Text Label 7150 4600 1    50   ~ 0
-mute
+MUTE
 Text Label 2450 3050 0    50   ~ 0
-mute
+MUTE
 Text Label 2450 2950 0    50   ~ 0
-sel
+SEL
 Text Label 2450 2850 0    50   ~ 0
-~shutdown
+~SHUTDOWN
 Text Label 2600 3150 0    50   ~ 0
-reset
+RESET
 Wire Wire Line
 	2450 3850 2750 3850
 Wire Wire Line
@@ -633,7 +633,7 @@ Wire Wire Line
 Connection ~ 6950 5500
 Connection ~ 8350 5500
 Text Label 6850 6100 2    50   ~ 0
-detect?
+DETECT?
 Wire Wire Line
 	7600 6400 7700 6400
 Connection ~ 7600 6400
