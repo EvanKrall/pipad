@@ -17,4 +17,4 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-atmxt2952td breakout.xml
+gt9113_breakout.xml

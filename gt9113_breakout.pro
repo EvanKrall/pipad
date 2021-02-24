@@ -1,5 +1,5 @@
-update=Wednesday, January 06, 2021 at 10:02:44 PM
-last_client=kicad
+update=Tuesday, February 23, 2021 at 09:27:53 PM
+last_client=pcbnew
 [general]
 version=1
 [schematic_editor]
@@ -22,19 +22,18 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.076
-MinViaDiameter=0.3
+MinTrackWidth=0.127
+MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.3
-TrackWidth1=0.0762
-TrackWidth2=0.0762
-TrackWidth3=0.127
-TrackWidth4=0.254
-ViaDiameter1=0.3
+TrackWidth1=0.127
+TrackWidth2=0.127
+TrackWidth3=0.254
+ViaDiameter1=0.45
 ViaDrill1=0.2
-ViaDiameter2=0.3
+ViaDiameter2=0.45
 ViaDrill2=0.2
 ViaDiameter3=0.7
 ViaDrill3=0.4
@@ -234,9 +233,9 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.0762
-TrackWidth=0.0762
-ViaDiameter=0.3
+Clearance=0.127
+TrackWidth=0.127
+ViaDiameter=0.45
 ViaDrill=0.2
 uViaDiameter=0.45
 uViaDrill=0.2
@@ -244,17 +243,6 @@ dPairWidth=0.254
 dPairGap=0.127
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=BGA
-Clearance=0.089
-TrackWidth=0.0762
-ViaDiameter=0.3
-ViaDrill=0.2
-uViaDiameter=0.25
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/2]
 Name=Power
 Clearance=0.127
 TrackWidth=0.508

@@ -61,7 +61,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: ./output/svgs/atmxt2952td breakout_rev-In1_Cu.svg
+        asset_path: ./output/svgs/gt9113_breakout_rev-In1_Cu.svg
         asset_name: In1_Cu.svg
         asset_content_type: image/svg+xml
     - name: Upload In2.Cu
@@ -71,7 +71,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: output/svgs/atmxt2952td breakout_rev-In2_Cu.svg
+        asset_path: output/svgs/gt9113_breakout_rev-In2_Cu.svg
         asset_name: In2_Cu.svg
         asset_content_type: image/svg+xml
 
@@ -103,8 +103,8 @@ jobs:
         board: '*.kicad_pcb'
     - name: "check output: plot"
       run: |
-        test -f 'output/docs/img/atmxt2952td breakout-top.svg' && \
-        test -f 'output/docs/img/atmxt2952td breakout-bottom.svg'
+        test -f 'output/docs/img/gt9113_breakout-top.svg' && \
+        test -f 'output/docs/img/gt9113_breakout-bottom.svg'
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
@@ -117,7 +117,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: 'output/docs/img/atmxt2952td breakout-top.svg'
+        asset_path: 'output/docs/img/gt9113_breakout-top.svg'
         asset_name: top.svg
         asset_content_type: image/svg+xml
     - name: Upload bottom svg
@@ -127,7 +127,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: 'output/docs/img/atmxt2952td breakout-bottom.svg'
+        asset_path: 'output/docs/img/gt9113_breakout-bottom.svg'
         asset_name: bottom.svg
         asset_content_type: image/svg+xml
 

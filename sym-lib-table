@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name atmxt2952td)(type Legacy)(uri ${KIPRJMOD}/symbols/atmxt2952td.lib)(options "")(descr ""))
   (lib (name 504740-5100)(type Legacy)(uri ${KIPRJMOD}/symbols/504740-5100.lib)(options "")(descr ""))
   (lib (name 10118194-0001LF)(type Legacy)(uri ${KIPRJMOD}/symbols/10118194-0001LF.lib)(options "")(descr ""))
-  (lib (name atmxt2952td-breakout-rescue)(type Legacy)(uri "${KIPRJMOD}/atmxt2952td breakout-rescue.lib")(options "")(descr ""))
 )
