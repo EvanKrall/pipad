@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name 504740-5100)(type Legacy)(uri ${KIPRJMOD}/symbols/504740-5100.lib)(options "")(descr ""))
   (lib (name 10118194-0001LF)(type Legacy)(uri ${KIPRJMOD}/symbols/10118194-0001LF.lib)(options "")(descr ""))
+  (lib (name gt9113)(type Legacy)(uri ${KIPRJMOD}/symbols/gt9113.lib)(options "")(descr ""))
 )

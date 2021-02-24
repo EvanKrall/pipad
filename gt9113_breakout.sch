@@ -250,12 +250,6 @@ Text Label 12900 11400 3    50   ~ 0
 Y22
 Text Label 12800 11400 3    50   ~ 0
 Y23
-NoConn ~ 5550 9750
-NoConn ~ 5450 9750
-NoConn ~ 5350 9750
-NoConn ~ 5250 9750
-NoConn ~ 5150 9750
-NoConn ~ 5050 9750
 $Comp
 L power:GND #PWR01
 U 1 1 6004D95A
@@ -505,4 +499,157 @@ Wire Wire Line
 	2250 7700 2900 7700
 Text Label 950  5550 0    50   ~ 0
 VIN_3.3
+$Comp
+L gt9113:GT9113 U?
+U 1 1 60371774
+P 9850 5550
+F 0 "U?" H 9850 1661 50  0000 C CNN
+F 1 "GT9113" H 9850 1570 50  0000 C CNN
+F 2 "" H 9800 6100 50  0001 C CNN
+F 3 "" H 9800 6100 50  0001 C CNN
+	1    9850 5550
+	1    0    0    -1  
+$EndComp
+Text Label 10500 1950 0    50   ~ 0
+X0
+Text Label 10500 2050 0    50   ~ 0
+X1
+Text Label 10500 2150 0    50   ~ 0
+X2
+Text Label 10500 2250 0    50   ~ 0
+X3
+Text Label 10500 2350 0    50   ~ 0
+X4
+Text Label 10500 2450 0    50   ~ 0
+X5
+Text Label 10500 2550 0    50   ~ 0
+X6
+Text Label 10500 2650 0    50   ~ 0
+X7
+Text Label 10500 2750 0    50   ~ 0
+X8
+Text Label 10500 2850 0    50   ~ 0
+X9
+Text Label 10500 2950 0    50   ~ 0
+X10
+Text Label 10500 3050 0    50   ~ 0
+X11
+Text Label 10500 3150 0    50   ~ 0
+X12
+Text Label 10500 3250 0    50   ~ 0
+X13
+Text Label 10500 3350 0    50   ~ 0
+X14
+Text Label 10500 3450 0    50   ~ 0
+X15
+Text Label 10500 3550 0    50   ~ 0
+X16
+Text Label 10500 3650 0    50   ~ 0
+X17
+Text Label 10500 3750 0    50   ~ 0
+X18
+Text Label 10500 3850 0    50   ~ 0
+X19
+Text Label 10500 3950 0    50   ~ 0
+X20
+Text Label 10500 4050 0    50   ~ 0
+X21
+Text Label 10500 4150 0    50   ~ 0
+X22
+Text Label 10500 4250 0    50   ~ 0
+X23
+Text Label 10500 4350 0    50   ~ 0
+X24
+Text Label 10500 4450 0    50   ~ 0
+X25
+Text Label 10500 4550 0    50   ~ 0
+X26
+Text Label 10500 4650 0    50   ~ 0
+X27
+Text Label 10500 4750 0    50   ~ 0
+X28
+Text Label 10500 4850 0    50   ~ 0
+X29
+Text Label 10500 4950 0    50   ~ 0
+X30
+Text Label 10500 5050 0    50   ~ 0
+X31
+Text Label 10500 5150 0    50   ~ 0
+X32
+Text Label 10500 5250 0    50   ~ 0
+X33
+Text Label 10500 5350 0    50   ~ 0
+X34
+Text Label 10500 5450 0    50   ~ 0
+X35
+Text Label 10500 5550 0    50   ~ 0
+X36
+Text Label 10500 5650 0    50   ~ 0
+X37
+Text Label 10500 5750 0    50   ~ 0
+X38
+Text Label 10500 5850 0    50   ~ 0
+X39
+NoConn ~ 10500 5950
+NoConn ~ 10500 6050
+Text Label 10500 9150 0    50   ~ 0
+Y0
+Text Label 10500 9050 0    50   ~ 0
+Y1
+Text Label 10500 8950 0    50   ~ 0
+Y2
+Text Label 10500 8850 0    50   ~ 0
+Y3
+Text Label 10500 8750 0    50   ~ 0
+Y4
+Text Label 10500 8650 0    50   ~ 0
+Y5
+Text Label 10500 8550 0    50   ~ 0
+Y6
+Text Label 10500 8450 0    50   ~ 0
+Y7
+Text Label 10500 8350 0    50   ~ 0
+Y8
+Text Label 10500 8250 0    50   ~ 0
+Y9
+Text Label 10500 8150 0    50   ~ 0
+Y10
+Text Label 10500 8050 0    50   ~ 0
+Y11
+Text Label 10500 7950 0    50   ~ 0
+Y12
+Text Label 10500 7850 0    50   ~ 0
+Y13
+Text Label 10500 7750 0    50   ~ 0
+Y14
+Text Label 10500 7650 0    50   ~ 0
+Y15
+Text Label 10500 7550 0    50   ~ 0
+Y16
+Text Label 10500 7450 0    50   ~ 0
+Y17
+Text Label 10500 7350 0    50   ~ 0
+Y18
+Text Label 10500 7250 0    50   ~ 0
+Y19
+Text Label 10500 7150 0    50   ~ 0
+Y20
+Text Label 10500 7050 0    50   ~ 0
+Y21
+Text Label 10500 6950 0    50   ~ 0
+Y22
+Text Label 10500 6850 0    50   ~ 0
+Y23
+Text Label 10500 6750 0    50   ~ 0
+Y24
+Text Label 10500 6650 0    50   ~ 0
+Y25
+Text Label 10500 6550 0    50   ~ 0
+Y26
+Text Label 10500 6450 0    50   ~ 0
+Y27
+Text Label 10500 6350 0    50   ~ 0
+Y28
+Text Label 10500 6250 0    50   ~ 0
+Y29
 $EndSCHEMATC
