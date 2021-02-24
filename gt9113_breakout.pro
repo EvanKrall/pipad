@@ -1,5 +1,5 @@
-update=Tuesday, February 23, 2021 at 09:27:53 PM
-last_client=pcbnew
+update=Tuesday, February 23, 2021 at 10:43:40 PM
+last_client=kicad
 [general]
 version=1
 [schematic_editor]
@@ -27,7 +27,7 @@ MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
-MinHoleToHole=0.3
+MinHoleToHole=0.5
 TrackWidth1=0.127
 TrackWidth2=0.127
 TrackWidth3=0.254
