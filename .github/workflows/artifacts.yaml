@@ -19,6 +19,7 @@ jobs:
         schema: '*.sch'
     - name: "check output: gerber"
       run: |
+        find output/gerbers &&
         test -f output/gerbers/*B_CrtYd.gbr && \
         test -f output/gerbers/*F_CrtYd.gbr && \
         test -f output/gerbers/*B_Cu.gbr && \
@@ -30,13 +31,10 @@ jobs:
         test -f output/gerbers/*B_SilkS.gbr && \
         test -f output/gerbers/*F_SilkS.gbr && \
         test -f output/gerbers/*B_CrtYd.gbr && \
-        test -f output/gerbers/*F_CrtYd.gbr
-    - name: "check output: gerber"
-      run: |
+        test -f output/gerbers/*F_CrtYd.gbr && \
         test -f output/gerbers/*-NPTH_drill.gbr && \
-        test -f output/gerbers/*-NPTH_drill.drl && \
         test -f output/gerbers/*-PTH_drill.gbr && \
-        test -f output/gerbers/*-PTH_drill.drl
+        test -f output/gerbers/*-drill.drl
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
