@@ -3,11 +3,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Connector:Conn_01x03_Female" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector:Conn_01x04_Female" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x03_Female" (id 1) (at 0 -5.08 0)
+      (property "Value" "Conn_01x04_Female" (id 1) (at 0 -7.62 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -19,13 +19,16 @@
       (property "ki_keywords" "connector" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_01x03_Female_1_1"
+      (symbol "Conn_01x04_Female_1_1"
+        (arc (start 0 -4.572) (end 0 -5.588) (radius (at 0 -5.08) (length 0.508) (angles 90.1 -90.1))
+          (stroke (width 0.1524)) (fill (type none))
+        )
         (arc (start 0 -2.032) (end 0 -3.048) (radius (at 0 -2.54) (length 0.508) (angles 90.1 -90.1))
           (stroke (width 0.1524)) (fill (type none))
         )
@@ -33,6 +36,13 @@
           (stroke (width 0.1524)) (fill (type none))
         )
         (arc (start 0 3.048) (end 0 2.032) (radius (at 0 2.54) (length 0.508) (angles 90.1 -90.1))
+          (stroke (width 0.1524)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -5.08)
+            (xy -0.508 -5.08)
+          )
           (stroke (width 0.1524)) (fill (type none))
         )
         (polyline
@@ -67,6 +77,10 @@
         (pin passive line (at -5.08 -2.54 0) (length 3.81)
           (name "Pin_3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -200,12 +214,13 @@
     )
   )
 
-  (junction (at 133.35 90.17) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 132.08 87.63) (diameter 1.016) (color 0 0 0 0))
   (junction (at 133.35 95.25) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 143.51 90.17) (diameter 1.016) (color 0 0 0 0))
 
-  (wire (pts (xy 130.81 90.17) (xy 133.35 90.17))
+  (wire (pts (xy 130.81 90.17) (xy 143.51 90.17))
     (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1a9b141c-d840-4a15-bf21-e851f59fa7dd)
+    (uuid b3771717-9bc5-4478-800b-697412bfb178)
   )
   (wire (pts (xy 130.81 92.71) (xy 139.7 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -215,13 +230,17 @@
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (uuid 66552f59-26e9-41a9-a286-ab86ff51ed70)
   )
-  (wire (pts (xy 133.35 90.17) (xy 147.32 90.17))
+  (wire (pts (xy 132.08 87.63) (xy 130.81 87.63))
     (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 1a9b141c-d840-4a15-bf21-e851f59fa7dd)
+    (uuid 2d2be818-3925-47d1-ad51-ca7f1ce49827)
   )
   (wire (pts (xy 133.35 95.25) (xy 137.16 95.25))
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (uuid 66552f59-26e9-41a9-a286-ab86ff51ed70)
+  )
+  (wire (pts (xy 137.16 87.63) (xy 132.08 87.63))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid 2d2be818-3925-47d1-ad51-ca7f1ce49827)
   )
   (wire (pts (xy 139.7 92.71) (xy 139.7 95.25))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -231,12 +250,30 @@
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (uuid df3108f9-17d5-43d4-9443-c43147553a9c)
   )
+  (wire (pts (xy 143.51 90.17) (xy 147.32 90.17))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (uuid f0851c34-8acd-42c4-afaa-66fe417f9308)
+  )
 
-  (global_label "VCC_3.3" (shape input) (at 139.7 90.17 90)
+  (global_label "VCC_3.3" (shape input) (at 137.16 87.63 90)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid bdd0670e-8222-4170-b321-78616cf4d709)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 139.6206 80.1369 90)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 137.0806 77.5969 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "VBAT" (shape input) (at 140.97 90.17 90)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 5d130a3e-c632-4cac-84b5-31f690366a0e)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 140.8906 83.3421 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "LDO_EN" (shape input) (at 143.51 95.25 270)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a4c4a807-e444-4ae3-940d-8e18620bfa42)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 143.4306 104.7388 90)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "VCC_1.8" (shape input) (at 167.64 90.17 0)
@@ -247,20 +284,20 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 133.35 90.17 0) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 132.08 87.63 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid 44b1b0ba-f8ee-4233-90c7-657fdb5e64b5)
-    (property "Reference" "#FLG01" (id 0) (at 133.35 88.265 0)
+    (uuid 13fb02b8-1781-47d3-8e52-500a8ff5dd03)
+    (property "Reference" "#FLG?" (id 0) (at 132.08 85.725 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (id 1) (at 133.35 85.8456 0))
-    (property "Footprint" "" (id 2) (at 133.35 90.17 0)
+    (property "Value" "PWR_FLAG" (id 1) (at 132.08 79.4956 90))
+    (property "Footprint" "" (id 2) (at 132.08 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 133.35 90.17 0)
+    (property "Datasheet" "~" (id 3) (at 132.08 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 72f9abcf-ad78-4cd3-b468-b59f96f8fecc))
+    (pin "1" (uuid f6eed7d0-b3f7-4404-ae1a-7f64b86378e1))
   )
 
   (symbol (lib_id "power:PWR_FLAG") (at 133.35 95.25 0) (unit 1)
@@ -269,7 +306,7 @@
     (property "Reference" "#FLG0101" (id 0) (at 133.35 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (id 1) (at 133.35 90.9256 0))
+    (property "Value" "PWR_FLAG" (id 1) (at 133.35 101.0856 90))
     (property "Footprint" "" (id 2) (at 133.35 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -277,6 +314,22 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 894f9efc-f717-426f-bf9d-b8bc3e950045))
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 143.51 90.17 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 44b1b0ba-f8ee-4233-90c7-657fdb5e64b5)
+    (property "Reference" "#FLG01" (id 0) (at 143.51 88.265 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (id 1) (at 143.51 82.0356 90))
+    (property "Footprint" "" (id 2) (at 143.51 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 143.51 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 72f9abcf-ad78-4cd3-b468-b59f96f8fecc))
   )
 
   (symbol (lib_id "power:GND") (at 137.16 95.25 0) (unit 1)
@@ -311,20 +364,21 @@
     (pin "1" (uuid 1a1127d1-5fe9-403d-8aae-288cce23d86b))
   )
 
-  (symbol (lib_id "Connector:Conn_01x03_Female") (at 125.73 92.71 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x04_Female") (at 125.73 90.17 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a946a672-0361-4eb9-a0a1-9c0b5f6de790)
-    (property "Reference" "J4" (id 0) (at 128.422 88.043 0))
-    (property "Value" "Conn_01x02_Female" (id 1) (at 123.3424 94.1513 90))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 125.73 92.71 0)
+    (property "Reference" "J4" (id 0) (at 128.422 85.503 0))
+    (property "Value" "Conn_01x02_Female" (id 1) (at 123.3424 91.6113 90))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 125.73 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 125.73 92.71 0)
+    (property "Datasheet" "~" (id 3) (at 125.73 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0163becd-3b89-4555-973f-ec09b8277cec))
     (pin "2" (uuid 2612929c-48a1-4f19-97a2-a583696bac8e))
     (pin "3" (uuid ab9508c9-f17d-4ff2-ad26-b12afabcec5f))
+    (pin "4" (uuid 31d102d1-4b8b-4d18-a668-5f631568bb5e))
   )
 
   (symbol (lib_id "Regulator_Linear:MIC5504-1.8YM5") (at 157.48 92.71 0) (unit 1)
@@ -382,6 +436,9 @@
     (path "/414dde5a-2fa8-4d44-b31d-b57804f755f6"
       (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
     )
+    (path "/13fb02b8-1781-47d3-8e52-500a8ff5dd03"
+      (reference "#FLG?") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
     (path "/68116498-33a1-4a1b-8415-d8c39b8426cf"
       (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
     )
@@ -396,6 +453,27 @@
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/4063a970-cb69-42d8-b937-21092094a45a"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/5c9f788d-f8be-4264-9f98-9cc991b217dc"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/52fecab1-8b85-430d-821a-5639f8a23dd6"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/4834a7a9-cd44-4c08-9fcf-66be012ea3af"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/2404d447-2a71-4333-80ba-6c76f251b763"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/fda295f9-5722-4088-b9b7-2de5fa044887"
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/d7aa9119-7189-40e9-bd89-afe68e2237dd"
+      (reference "#PWR08") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/6454fd58-e4da-41e4-ac11-edf4c05e2ad3"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/ef6a2f11-444d-4ff7-9a6e-82a2bb55327d"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
@@ -417,27 +495,6 @@
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/838e9cf9-35ba-4d6f-ac5a-fa2612c574de"
       (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/2404d447-2a71-4333-80ba-6c76f251b763"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/4834a7a9-cd44-4c08-9fcf-66be012ea3af"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/52fecab1-8b85-430d-821a-5639f8a23dd6"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/5c9f788d-f8be-4264-9f98-9cc991b217dc"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/6454fd58-e4da-41e4-ac11-edf4c05e2ad3"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/d7aa9119-7189-40e9-bd89-afe68e2237dd"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/fda295f9-5722-4088-b9b7-2de5fa044887"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/1236932b-e848-47c3-a615-22b04b990ea2"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
@@ -481,17 +538,17 @@
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/d57f3955-4f73-47b5-a137-ca3e4ca1983b"
       (reference "C14") (unit 1) (value "1uF") (footprint "")
     )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/2e0ec137-0224-4b2a-b8ec-01b49fa4194d"
-      (reference "C?") (unit 1) (value "4.7uF") (footprint "")
-    )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/883bde91-7d01-40cd-8bac-556ba2d2b550"
-      (reference "C?") (unit 1) (value "1uF") (footprint "")
+      (reference "C15") (unit 1) (value "1uF") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/a44a58be-109e-4f11-bb12-5b305446830c"
-      (reference "C?") (unit 1) (value "0.47uF") (footprint "")
+      (reference "C16") (unit 1) (value "0.47uF") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/2e0ec137-0224-4b2a-b8ec-01b49fa4194d"
+      (reference "C17") (unit 1) (value "4.7uF") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/2e2bd6a2-0649-4331-8eef-bb523aed6947"
-      (reference "D?") (unit 1) (value "D_Schottky") (footprint "")
+      (reference "D1") (unit 1) (value "D_Schottky") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/546be596-3aa6-4c3f-acd9-b48839fb0e99"
       (reference "J1") (unit 1) (value "Conn_01x22_Female") (footprint "Connector_FFC-FPC:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal")
@@ -500,31 +557,31 @@
       (reference "J3") (unit 1) (value "Conn_01x34_Female") (footprint "footprints:20474-030E-11")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/bff94b77-ac04-49d8-af6b-9432036d2bce"
-      (reference "J5") (unit 1) (value "Conn_01x02_Female") (footprint "")
+      (reference "J5") (unit 1) (value "Conn_01x04_Female") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/e043cedd-01c1-42d0-b9c5-2811df027170"
-      (reference "L?") (unit 1) (value "4.7uH") (footprint "")
+      (reference "L1") (unit 1) (value "4.7uH") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/f8ea11fb-7cb1-4b5c-90d9-99378eeb9a2c"
       (reference "R1") (unit 1) (value "R") (footprint "")
     )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/235d5b23-169d-4712-bbc5-0ad97aa254f9"
-      (reference "R?") (unit 1) (value "143k") (footprint "")
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/a62c06ce-8870-4f3e-b9c3-edd7409eb43a"
+      (reference "R2") (unit 1) (value "53.6k") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/50128048-9fa3-41d6-9ae7-cc8d2a068ac3"
-      (reference "R?") (unit 1) (value "1.3M") (footprint "")
-    )
-    (path "/020200e7-3afd-473f-afec-b5c398a42f32/a62c06ce-8870-4f3e-b9c3-edd7409eb43a"
-      (reference "R?") (unit 1) (value "53.6k") (footprint "")
+      (reference "R3") (unit 1) (value "1.3M") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/fcaf88c6-19bc-4c01-9bde-6f4930c6b9e7"
-      (reference "R?") (unit 1) (value "1M") (footprint "")
+      (reference "R4") (unit 1) (value "1M") (footprint "")
+    )
+    (path "/020200e7-3afd-473f-afec-b5c398a42f32/235d5b23-169d-4712-bbc5-0ad97aa254f9"
+      (reference "R5") (unit 1) (value "143k") (footprint "")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/f3ddadb3-fb29-4955-b0f8-25470245d603"
       (reference "U1") (unit 1) (value "SN65DSI83TPAPRQ1") (footprint "PAP0064Q_N")
     )
     (path "/020200e7-3afd-473f-afec-b5c398a42f32/750c7506-5992-4e4e-a322-eaf1b648d850"
-      (reference "U?") (unit 1) (value "TPS61176RTER") (footprint "RTE16_1P66X1P66_TEX")
+      (reference "U3") (unit 1) (value "TPS61176RTER") (footprint "RTE16_1P66X1P66_TEX")
     )
     (path "/92af9ce3-f743-400b-a1b9-24e3153fcace/4158e55b-de2a-4196-a4e4-0156e9df3943"
       (reference "#PWR02") (unit 1) (value "GND") (footprint "")
