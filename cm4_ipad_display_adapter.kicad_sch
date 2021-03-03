@@ -369,7 +369,7 @@
     (uuid a946a672-0361-4eb9-a0a1-9c0b5f6de790)
     (property "Reference" "J4" (id 0) (at 128.422 85.503 0))
     (property "Value" "Conn_01x02_Female" (id 1) (at 123.3424 91.6113 90))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 125.73 90.17 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (id 2) (at 125.73 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 125.73 90.17 0)
@@ -446,7 +446,7 @@
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
     )
     (path "/a946a672-0361-4eb9-a0a1-9c0b5f6de790"
-      (reference "J4") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+      (reference "J4") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/7cf1659e-8585-4172-8c4c-c99ac927965b"
       (reference "U2") (unit 1) (value "MIC5504-1.8YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")
