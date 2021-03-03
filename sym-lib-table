@@ -2,4 +2,5 @@
   (lib (name "SN65DSI86IPAPRQ1")(type "Legacy")(uri "${KIPRJMOD}/library/SN65DSI86IPAPRQ1.lib")(options "")(descr ""))
   (lib (name "SN65DSI83TPAPRQ1")(type "KiCad")(uri "${KIPRJMOD}/library/SN65DSI83TPAPRQ1.kicad_sym")(options "")(descr ""))
   (lib (name "TPS61176RTER")(type "KiCad")(uri "${KIPRJMOD}/library/TPS61176RTER.kicad_sym")(options "")(descr ""))
+  (lib (name "PMEG4010EPK_315")(type "KiCad")(uri "${KIPRJMOD}/library/PMEG4010EPK_315.kicad_sym")(options "")(descr ""))
 )

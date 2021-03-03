@@ -1,0 +1,81 @@
+(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
+  (symbol "PMEG4010EPK_315:PMEG4010EPK_315" (pin_numbers hide) (pin_names (offset -1.651) hide) (in_bom yes) (on_board yes)
+    (property "Reference" "CR" (id 0) (at 0 4.445 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "PMEG4010EPK_315" (id 1) (at 0 -7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "DIODE_PMEG4010EPK_315_NEX" (id 2) (at 0 -9.144 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at -5.08 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_locked" "" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_fp_filters" "DIODE_PMEG4010EPK_315_NEX" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "PMEG4010EPK_315_1_1"
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -1.6002 0)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 1.905)
+          (xy -1.27 -1.905)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.905 0)
+          (xy -1.27 0)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -1.905)
+          (xy 1.27 1.905)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 0)
+          (xy -1.27 1.905)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -1.905)
+          (xy 1.27 0)
+        )
+        (stroke (width 0.2032)) (fill (type none))
+      )
+      (pin passive line (at -5.08 0 0) (length 2.54)
+        (name "2" (effects (font (size 1.4986 1.4986))))
+        (number "2" (effects (font (size 1.4986 1.4986))))
+      )
+      (pin passive line (at 5.08 0 180) (length 2.54)
+        (name "1" (effects (font (size 1.4986 1.4986))))
+        (number "1" (effects (font (size 1.4986 1.4986))))
+      )
+    )
+  )
+)
