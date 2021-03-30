@@ -18,3 +18,5 @@ fp-info-cache
 *.dsn
 *.ses
 i2s_soundcard.xml
+i2s_soundcard-backups/
+*.kicad_prl
