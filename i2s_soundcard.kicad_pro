@@ -48,11 +48,17 @@
           "min_clearance": 0.127
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
-        "version": 1
+        "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
@@ -108,16 +114,13 @@
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.44999999999999996,
-        "solder_mask_clearance": 0.049999999999999996,
-        "solder_mask_min_width": 0.0,
-        "solder_paste_clearance": 0.0,
-        "solder_paste_margin_ratio": 0.0
+        "min_via_diameter": 0.44999999999999996
       },
       "track_widths": [
         0.0,
         0.127,
         0.127,
+        0.19,
         0.254,
         0.254,
         0.5
@@ -376,8 +379,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.19,
-        "via_diameter": 0.7,
-        "via_drill": 0.4,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
         "wire_width": 6.0
       },
       {
@@ -423,6 +426,7 @@
       "default_text_size": 50.0,
       "default_wire_thickness": 6.0,
       "field_names": [],
+      "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
       "intersheets_ref_show": false,
@@ -437,6 +441,12 @@
       "version": 0
     },
     "net_format_name": "",
+    "ngspice": {
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
@@ -446,7 +456,7 @@
   },
   "sheets": [
     [
-      "43d5f92a-4542-4d99-9eff-19176a79b076",
+      "00000000-0000-0000-0000-00006026a3be",
       ""
     ],
     [
