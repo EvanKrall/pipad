@@ -15,10 +15,12 @@ jobs:
       with:
         config: config/gerbers.kibot.yaml
         dir: output/
-        board: 'i2s_soundcard.kicad_pcb'
-        schema: 'i2s_soundcard.sch'
+        board: 'pipad.kicad_pcb'
+        schema: 'pipad.sch'
+
     - name: "check output: gerber"
       run: |
+        find output/gerbers &&
         test -f output/gerbers/*B_CrtYd.gbr && \
         test -f output/gerbers/*F_CrtYd.gbr && \
         test -f output/gerbers/*B_Cu.gbr && \
@@ -30,13 +32,11 @@ jobs:
         test -f output/gerbers/*B_SilkS.gbr && \
         test -f output/gerbers/*F_SilkS.gbr && \
         test -f output/gerbers/*B_CrtYd.gbr && \
-        test -f output/gerbers/*F_CrtYd.gbr
-    - name: "check output: gerber"
-      run: |
+        test -f output/gerbers/*F_CrtYd.gbr && \
         test -f output/gerbers/*-NPTH_drill.gbr && \
-        test -f output/gerbers/*-NPTH_drill.drl && \
         test -f output/gerbers/*-PTH_drill.gbr && \
-        test -f output/gerbers/*-PTH_drill.drl
+        test -f output/gerbers/*-drill.drl
+
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
@@ -61,7 +61,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: ./output/svgs/i2s_soundcard_rev-In1_Cu.svg
+        asset_path: ./output/svgs/pipad_rev-In1_Cu.svg
         asset_name: In1_Cu.svg
         asset_content_type: image/svg+xml
     - name: Upload In2.Cu
@@ -71,7 +71,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: output/svgs/i2s_soundcard_rev-In2_Cu.svg
+        asset_path: output/svgs/pipad_rev-In2_Cu.svg
         asset_name: In2_Cu.svg
         asset_content_type: image/svg+xml
 
@@ -99,12 +99,12 @@ jobs:
       with:
         config: config/pcbdraw.kibot.yaml
         dir: output/
-        schema: 'i2s_soundcard.sch'
-        board: 'i2s_soundcard.kicad_pcb'
+        schema: 'pipad.sch'
+        board: 'pipad.kicad_pcb'
     - name: "check output: pcbdraw"
       run: |
-        test -f 'output/docs/img/i2s_soundcard-top.svg' && \
-        test -f 'output/docs/img/i2s_soundcard-bottom.svg'
+        test -f 'output/docs/img/pipad-top.svg' && \
+        test -f 'output/docs/img/pipad-bottom.svg'
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
@@ -117,7 +117,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: 'output/docs/img/i2s_soundcard-top.svg'
+        asset_path: 'output/docs/img/pipad-top.svg'
         asset_name: top.svg
         asset_content_type: image/svg+xml
     - name: Upload bottom svg
@@ -127,7 +127,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: 'output/docs/img/i2s_soundcard-bottom.svg'
+        asset_path: 'output/docs/img/pipad-bottom.svg'
         asset_name: bottom.svg
         asset_content_type: image/svg+xml
 
@@ -145,8 +145,8 @@ jobs:
       with:
         config: config/schematic.kibot.yaml
         dir: output/
-        board: 'i2s_soundcard.kicad_pcb'
-        schema: 'i2s_soundcard.sch'
+        board: 'pipad.kicad_pcb'
+        schema: 'pipad.sch'
     - uses: actions/upload-artifact@v2
       if: ${{ success() }}
       with:
@@ -159,7 +159,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.release.outputs.upload_url }}
-        asset_path: 'output/docs/i2s_soundcard-schematic.pdf'
+        asset_path: 'output/docs/pipad-schematic.pdf'
         asset_name: schematic.pdf
         asset_content_type: application/pdf
 

@@ -5,4 +5,7 @@
   (lib (name "TLV7111830DSER")(type "KiCad")(uri "${KIPRJMOD}/symbols/TLV7111830DSER.kicad_sym")(options "")(descr ""))
   (lib (name "TPD4E02B04DQAR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPD4E02B04DQAR.kicad_sym")(options "")(descr ""))
   (lib (name "TLV320AIC3206IRSBR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TLV320AIC3206IRSBR.kicad_sym")(options "")(descr ""))
+  (lib (name "504740-5100")(type "KiCad")(uri "${KIPRJMOD}/symbols/504740-5100.kicad_sym")(options "")(descr ""))
+  (lib (name "10118194-0001LF")(type "KiCad")(uri "${KIPRJMOD}/symbols/10118194-0001LF.kicad_sym")(options "")(descr ""))
+  (lib (name "gt9113")(type "KiCad")(uri "${KIPRJMOD}/symbols/gt9113.kicad_sym")(options "")(descr ""))
 )

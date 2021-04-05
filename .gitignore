@@ -20,3 +20,5 @@ fp-info-cache
 pipad.xml
 pipad-backups/
 *.kicad_prl
+gt9113_breakout.xml
+gt9113_breakout-backups/

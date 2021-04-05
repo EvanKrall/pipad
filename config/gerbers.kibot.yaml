@@ -7,9 +7,16 @@ global:
 
 preflight:
   update_xml: false
-  run_drc: false
+  run_drc: true
   check_zone_fills: true
   ignore_unconnected: false
+  filters:
+    - filter: 'Ignore usb connector Pad too close to pad'
+      error: '19'
+      regex: 'Pad S_[^ ]* of J2 on All copper layers'
+    - filter: 'Ignore usb connector Drilled holes too close together'
+      error: '51'
+      regex: 'Pad S_[^ ]* of J2 on All copper layers'
 
 outputs:
   # For more information: https://github.com/INTI-CMNB/KiBoM
@@ -109,7 +116,7 @@ outputs:
       # [string='%f-%i%v.%x'] name for the drill file, KiCad defaults if empty (%i='PTH_drill'). Affected by global options
       output: '%f-%i%v.%x'
       # [boolean=true] generate one file for both, plated holes and non-plated holes, instead of two separated files
-      pth_and_npth_single_file: false
+      pth_and_npth_single_file: true
       # [dict|string] name of the drill report. Not generated unless a name is specified
       report:
         # [string=''] name of the drill report. Not generated unless a name is specified.
