@@ -18,3 +18,5 @@ fp-info-cache
 *.dsn
 *.ses
 gt9113_breakout.xml
+gt9113_breakout-backups/
+*.kicad_prl
