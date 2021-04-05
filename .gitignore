@@ -17,6 +17,6 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-i2s_soundcard.xml
-i2s_soundcard-backups/
+pipad.xml
+pipad-backups/
 *.kicad_prl
