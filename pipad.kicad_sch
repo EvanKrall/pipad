@@ -1352,7 +1352,7 @@
       (reference "#PWR034") (unit 1) (value "GND") (footprint "")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/4176f006-1e85-4f72-886c-602afcf82e4f"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0121") (unit 1) (value "GND") (footprint "")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/1236932b-e848-47c3-a615-22b04b990ea2"
       (reference "C28") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
@@ -1439,13 +1439,13 @@
       (reference "U10") (unit 1) (value "TPS61176RTER") (footprint "footprints:TPS61176RTER")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/82354318-2571-4a0b-8bb3-c49a37dd3cd6"
-      (reference "U?") (unit 1) (value "TCA9802") (footprint "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm")
-    )
-    (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/dde2625f-48de-4841-8aa9-4251bfdedb86"
-      (reference "U?") (unit 1) (value "MIC5504-1.8YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U11") (unit 1) (value "TCA9802") (footprint "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/e8f9db18-cf66-48a8-a00e-c7194093ccdf"
-      (reference "U?") (unit 1) (value "NTB0102") (footprint "")
+      (reference "U12") (unit 1) (value "NTB0102") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/dde2625f-48de-4841-8aa9-4251bfdedb86"
+      (reference "U13") (unit 1) (value "MIC5504-1.8YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-00006026a3be/e9fc4bb6-5bde-4905-9630-250663643427/fd649b90-fe8e-4ecf-a531-c62c874ce18c"
       (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
