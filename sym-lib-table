@@ -8,4 +8,8 @@
   (lib (name "504740-5100")(type "KiCad")(uri "${KIPRJMOD}/symbols/504740-5100.kicad_sym")(options "")(descr ""))
   (lib (name "10118194-0001LF")(type "KiCad")(uri "${KIPRJMOD}/symbols/10118194-0001LF.kicad_sym")(options "")(descr ""))
   (lib (name "gt9113")(type "KiCad")(uri "${KIPRJMOD}/symbols/gt9113.kicad_sym")(options "")(descr ""))
+  (lib (name "SN65DSI86IPAPRQ1")(type "Legacy")(uri "${KIPRJMOD}/library/SN65DSI86IPAPRQ1.lib")(options "")(descr ""))
+  (lib (name "SN65DSI83TPAPRQ1")(type "KiCad")(uri "${KIPRJMOD}/library/SN65DSI83TPAPRQ1.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS61176RTER")(type "KiCad")(uri "${KIPRJMOD}/library/TPS61176RTER.kicad_sym")(options "")(descr ""))
+  (lib (name "PMEG4010EPK_315")(type "KiCad")(uri "${KIPRJMOD}/library/PMEG4010EPK_315.kicad_sym")(options "")(descr ""))
 )
