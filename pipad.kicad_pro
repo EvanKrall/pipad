@@ -120,6 +120,7 @@
         0.0,
         0.127,
         0.127,
+        0.17,
         0.19,
         0.254,
         0.254,
@@ -491,6 +492,18 @@
     [
       "1cd8b29a-6edd-403b-84dd-3cf97c71d81a",
       "LVDS"
+    ],
+    [
+      "eed4aa3c-bec9-4438-9bbd-324cd17b6734",
+      "Battery charger"
+    ],
+    [
+      "593f2d4b-248b-4b7c-ad0b-1e77412a278c",
+      "Dock connector"
+    ],
+    [
+      "edc6f2df-f35f-4519-8662-3f6b046c5ebe",
+      "Ambient light sensor"
     ],
     [
       "e9fc4bb6-5bde-4905-9630-250663643427",

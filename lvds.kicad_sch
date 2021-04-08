@@ -2319,7 +2319,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid a9109381-ea8b-421f-af7e-72f3172efb50)
   )
-  (label "SN65DSI83_EN" (at 90.17 134.62 180)
+  (label "SN65DSI83_EN_1.8" (at 90.17 134.62 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid fe01bc27-de8a-4b97-8e1d-cdf307f31ab6)
   )
