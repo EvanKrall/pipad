@@ -958,7 +958,7 @@
           (name "B2" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 0 -17.78 90) (length 2.54)
+        (pin power_in line (at 0 -17.78 90) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
@@ -1585,6 +1585,7 @@
       )
     )
   )
+
 
   (junction (at 35.56 21.59) (diameter 1.016) (color 0 0 0 0))
   (junction (at 35.56 29.21) (diameter 1.016) (color 0 0 0 0))
