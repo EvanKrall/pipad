@@ -16,7 +16,7 @@ jobs:
         config: config/gerbers.kibot.yaml
         dir: output/
         board: 'pipad.kicad_pcb'
-        schema: 'pipad.sch'
+        schema: 'pipad.kicad_sch'
 
     - name: "check output: gerber"
       run: |
