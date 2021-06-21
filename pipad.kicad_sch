@@ -1366,7 +1366,7 @@
       (effects (font (size 1.524 1.524)))
     )
     (pin "1" (uuid 32521c37-95ba-42e3-8b14-0883f4406462))
-    (pin "10" (uuid 013f8928-97fa-41ef-b72a-e6c693208c8b))
+    (pin "10" (uuid 37b3832a-d995-4e4c-b53b-6f149df6ab2c))
     (pin "11" (uuid ea142359-78f6-47be-86be-092b97644d40))
     (pin "2" (uuid 33909403-0b74-4c33-9352-58c80da79859))
     (pin "3" (uuid c73c1639-3ba8-4039-bccb-c77756ac2621))
