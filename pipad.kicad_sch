@@ -2198,7 +2198,7 @@
       (reference "R17") (unit 1) (value "1M") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/235d5b23-169d-4712-bbc5-0ad97aa254f9"
-      (reference "R18") (unit 1) (value "143k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R18") (unit 1) (value "82k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/f3ddadb3-fb29-4955-b0f8-25470245d603"
       (reference "U5") (unit 1) (value "SN65DSI83TPAPRQ1") (footprint "footprints:SN65DSI83TPAPRQ1")

@@ -2786,7 +2786,7 @@
     (property "Reference" "R18" (id 0) (at 227.8381 77.5906 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "143k" (id 1) (at 227.838 79.889 0)
+    (property "Value" "82k" (id 1) (at 227.838 79.889 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 224.282 78.74 90)

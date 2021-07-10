@@ -60,18 +60,7 @@
           "width": 0.2
         }
       ],
-      "drc_exclusions": [
-        "clearance|124700000|104450000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|125200000|104450000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|127480000|109870000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|127480000|110370000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|139725000|108650000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|139725000|109150000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|141450000|119450000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|141450000|119950000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "silk_overlap|133200000|135700000|7bebc7a1-1419-40eb-9e14-2c7cf67d114e|34f1791d-6b8c-48d2-a6b3-3d5470fabca5",
-        "silk_overlap|133200000|135700000|d8af8721-559e-4ecf-8466-20adbbe051e0|34f1791d-6b8c-48d2-a6b3-3d5470fabca5"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
