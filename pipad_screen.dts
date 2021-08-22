@@ -1,0 +1,84 @@
+/dts-v1/;
+/plugin/;
+
+
+/ {
+    compatible = "brcm,bcm2835";
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            vdd_panel: fixedregulator {
+                regulator-boot-on;
+                compatible = "regulator-fixed";
+                regulator-name = "lvds18";
+                regulator-min-microvolt = <1800000>;
+                regulator-max-microvolt = <1800000>;
+                gpio = <&gpio 26 0>;
+                startup-delay-us = <70000>;
+                enable-active-high;
+                vin-supply = <&vdd_3v3_reg>;
+            };
+
+            panel_rgb: panel {
+              compatible = "lg,lp097x02-slq1";
+              // compatible = "koe,tx31d200vm0baa";
+              power-supply = <&vdd_panel>;
+              status = "okay";
+              port {
+                panel_lvds_in: endpoint {
+                  remote-endpoint = <&bridge_lvds_port>;
+                };
+              };
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&i2c1>;
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+            status = "okay";
+
+            sn65dsi83_bridge: bridge@2d {
+                compatible = "ti,sn65dsi83";
+                reg = <0x2d>;
+                status = "okay";
+                enable-gpios = <&gpio 5 0>;
+                power-supply = <&vdd_panel>;
+
+                ports {                
+                    #address-cells = <1>;
+                    #size-cells = <0>;
+                    port@0 {
+                        reg = <0>; // TODO: double-check
+                        bridge_dsi_port: endpoint {
+                            data-lanes = <1 2 3 4>;
+                            remote-endpoint = <&dsi_out_port>;
+                        };
+                    };
+
+                    port@2{
+                        reg = <2>;
+                        bridge_lvds_port: endpoint {
+                            remote-endpoint = <&panel_lvds_in>;
+                        };
+                    };
+                };
+            };
+        };
+    };
+
+    fragment@2 {
+        target = <&dsi1>;
+        __overlay__ {
+            compatible = "brcm,bcm2711-dsi1";
+            status = "okay";
+            port {
+                dsi_out_port: endpoint {
+                    remote-endpoint = <&bridge_dsi_port>;
+                };
+            };
+        };
+    };
+};
