@@ -14,4 +14,5 @@
   (lib (name "PMEG4010EPK_315")(type "KiCad")(uri "${KIPRJMOD}/library/PMEG4010EPK_315.kicad_sym")(options "")(descr ""))
   (lib (name "NTB0102")(type "KiCad")(uri "${KIPRJMOD}/library/NTB0102.kicad_sym")(options "")(descr ""))
   (lib (name "MIC5365-3.0YD5-TR")(type "KiCad")(uri "${KIPRJMOD}/library/MIC5365-3.0YD5-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/library/CM4IO.kicad_sym")(options "")(descr ""))
 )
