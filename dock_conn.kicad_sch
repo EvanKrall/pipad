@@ -1089,7 +1089,7 @@
     (uuid b0556a52-5d64-4380-b852-99ce5877cc5b)
     (property "Reference" "JP1" (id 0) (at 163.83 73.1478 0))
     (property "Value" "SolderJumper_2_Open" (id 1) (at 163.83 75.4465 0))
-    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (id 2) (at 163.83 77.47 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 163.83 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 163.83 77.47 0)
