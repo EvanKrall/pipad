@@ -600,6 +600,10 @@
       "Ambient light sensor"
     ],
     [
+      "21a15aa6-1f6e-4d00-a58a-2f544b151826",
+      "nvme"
+    ],
+    [
       "e9fc4bb6-5bde-4905-9630-250663643427",
       "spkr_amp_left"
     ]
