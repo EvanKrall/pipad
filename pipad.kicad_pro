@@ -415,7 +415,13 @@
           "/LVDS/CLKIN+",
           "/LVDS/CLKIN-",
           "/LVDS/DDC_CLK",
-          "/LVDS/DDC_DATA"
+          "/LVDS/DDC_DATA",
+          "/LVDS/RIN0+",
+          "/LVDS/RIN0-",
+          "/LVDS/RIN1+",
+          "/LVDS/RIN1-",
+          "/LVDS/RIN2+",
+          "/LVDS/RIN2-"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
