@@ -121,7 +121,7 @@
         (name "SYNC" (effects (font (size 1.27 1.27))))
         (number "33" (effects (font (size 1.27 1.27))))
       )
-      (pin power_in line (at -16.51 -7.62 0) (length 2.54)
+      (pin power_in line (at -5.08 96.52 270) (length 2.54)
         (name "VDDIO" (effects (font (size 1.27 1.27))))
         (number "34" (effects (font (size 1.27 1.27))))
       )

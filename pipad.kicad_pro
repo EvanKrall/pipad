@@ -57,7 +57,12 @@
         {
           "gap": 0.127,
           "via_gap": 0.0,
-          "width": 0.2
+          "width": 0.15367
+        },
+        {
+          "gap": 0.127,
+          "via_gap": 0.0,
+          "width": 0.20574
         }
       ],
       "drc_exclusions": [
@@ -141,7 +146,8 @@
         0.254,
         0.254,
         0.5,
-        1.5
+        1.5,
+        3.0
       ],
       "via_dimensions": [
         {
@@ -406,11 +412,11 @@
         "clearance": 0.127,
         "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.15367,
         "line_style": 0,
         "microvia_diameter": 0.45,
         "microvia_drill": 0.2,
-        "name": "LVDS/DSI",
+        "name": "100 ohm diff",
         "nets": [
           "/DSI1.C_N",
           "/DSI1.C_P",
@@ -435,7 +441,7 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.19,
+        "track_width": 0.15367,
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6.0
@@ -445,12 +451,18 @@
         "clearance": 0.127,
         "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.20574,
         "line_style": 0,
         "microvia_diameter": 0.45,
         "microvia_drill": 0.2,
-        "name": "PCIe",
+        "name": "90 ohm diff",
         "nets": [
+          "/Battery charger/D_BQ+",
+          "/Battery charger/D_BQ-",
+          "/Battery charger/D_CONN+",
+          "/Battery charger/D_CONN-",
+          "/Battery charger/D_CPU+",
+          "/Battery charger/D_CPU-",
           "/nvme/REFCLK_N",
           "/nvme/REFCLK_P",
           "/nvme/RX_N",
@@ -460,7 +472,7 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.19,
+        "track_width": 0.20574,
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6.0

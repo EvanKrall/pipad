@@ -16,4 +16,5 @@
   (lib (name "MIC5365-3.0YD5-TR")(type "KiCad")(uri "${KIPRJMOD}/library/MIC5365-3.0YD5-TR.kicad_sym")(options "")(descr ""))
   (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/library/CM4IO.kicad_sym")(options "")(descr ""))
   (lib (name "pcie_m2_ngff")(type "KiCad")(uri "${KIPRJMOD}/library/pcie_m2_ngff.kicad_sym")(options "")(descr ""))
+  (lib (name "NX3DV42")(type "KiCad")(uri "${KIPRJMOD}/library/NX3DV42.kicad_sym")(options "")(descr ""))
 )

@@ -963,6 +963,11 @@
     (uuid 65646875-9dc0-4066-8b39-cf754d1c6aa2)
   )
 
+  (label "USB_PWR_B_CONN" (at 152.4 72.39 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 33e02eed-cb7a-42af-bf89-1a19d996218c)
+  )
+
   (hierarchical_label "GND_AUDIO_DOCKB" (shape input) (at 118.11 123.19 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ef0876ad-bd5c-4370-971b-ed4c6f4ef803)
@@ -1047,7 +1052,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7bd9c996-f477-40a7-bea1-400f164c4929)
   )
-  (hierarchical_label "USB_PWR_B_CONN" (shape input) (at 180.34 77.47 0)
+  (hierarchical_label "USB_PWR_B" (shape input) (at 180.34 77.47 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 266ab0a8-57ef-4cbc-892b-efd6edff2f17)
   )
