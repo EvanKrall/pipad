@@ -2778,6 +2778,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b6bee398-2f55-4335-8ac5-5500ec6c4809)
   )
+  (label "VCC_5.0" (at 400.05 104.14 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ad9f979f-bdca-455a-a871-d978349bb736)
+  )
   (label "SCL" (at 400.05 116.84 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b9d17d65-8514-487f-8497-763857a09905)
@@ -3180,6 +3184,10 @@
     (pin "D_CPU-" input (at 353.06 129.54 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 4492fafd-c612-492e-aa2f-a7337d074b63)
+    )
+    (pin "VOUT_5.0" output (at 400.05 104.14 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid c10de152-c6a9-4185-9063-894ee40db413)
     )
   )
 
@@ -3945,6 +3953,9 @@
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/a765b945-47c1-486b-90c7-1176b9aaf6b5"
       (reference "J9") (unit 1) (value "Conn_01x34_Female") (footprint "footprints:20474-030E-11")
     )
+    (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/6f873648-ff3d-4c25-9fca-3036d0d88c8a"
+      (reference "JP3") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/e043cedd-01c1-42d0-b9c5-2811df027170"
       (reference "L1") (unit 1) (value "4.7uH") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
@@ -3983,6 +3994,18 @@
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005f7992cc"
       (reference "#FLG0104") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/c838ec75-5556-4a35-8997-014a49ed61d5"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/5ac0ff9b-d8c8-42e2-86d8-bb6d1abf9381"
+      (reference "#PWR018") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/62d1699b-aeb7-4562-b3e5-cb552d8a6b68"
+      (reference "#PWR038") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/2a748189-f179-4a65-a569-8d9d8f422180"
+      (reference "#PWR041") (unit 1) (value "GND") (footprint "")
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/b7269330-1a8b-4d32-8cbf-f9de4c1809fa"
       (reference "#PWR0124") (unit 1) (value "GND") (footprint "")
@@ -4044,6 +4067,18 @@
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005f794650"
       (reference "C53") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/c08f2455-e237-4af6-aec0-d1ea3349686b"
+      (reference "C56") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/22528d77-c980-45a1-83a2-597121e4c311"
+      (reference "C57") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/39a9968f-5240-440b-9bcd-438448f19110"
+      (reference "C58") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/f05170eb-73f0-4ad8-baf9-51c5ed4cf650"
+      (reference "C59") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/80125fd9-cbee-474e-bd31-4c8328a3ee11"
       (reference "J8") (unit 1) (value "Conn_01x04") (footprint "footprints:ipad battery connector")
     )
@@ -4053,8 +4088,14 @@
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/998b5a63-6aee-4cbd-b6dd-a6b5089cdefa"
       (reference "JP4") (unit 1) (value "SolderJumper_2_Open") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/b307863c-6ee2-4270-92c4-af306c3bc135"
+      (reference "JP5") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005f795446"
       (reference "L2") (unit 1) (value "2.2uH") (footprint "Inductor_SMD:L_1008_2520Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/a046568b-42d0-4a9f-87e1-7868ad902963"
+      (reference "L3") (unit 1) (value "2.2uH") (footprint "Inductor_SMD:L_1008_2520Metric")
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005f78f911"
       (reference "R19") (unit 1) (value "220") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -4067,6 +4108,12 @@
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/9adb0005-283c-4b18-82d8-133b5b8bd953"
       (reference "R22") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/565adb91-6993-45e6-afd5-a698a4ab1e26"
+      (reference "R23") (unit 1) (value "787k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/d7bd6322-e58b-40dd-9c4c-255b2ea54a5c"
+      (reference "R24") (unit 1) (value "150k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005fc06d49"
       (reference "TP1") (unit 1) (value "DNP") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
@@ -4082,6 +4129,9 @@
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/e914ae85-9fa3-4103-9d2c-d0b470367bbc"
       (reference "U17") (unit 1) (value "NX3DV42GU") (footprint "footprints:NX3DV42GU")
+    )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/a416404b-0374-4615-a905-0acc026b6219"
+      (reference "U18") (unit 1) (value "MP3422GG-P") (footprint "footprints:MP3422GG-P")
     )
     (path "/593f2d4b-248b-4b7c-ad0b-1e77412a278c/2e77eb4f-b196-41c9-89cb-0d614cc04886"
       (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
