@@ -4277,6 +4277,9 @@
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/b307863c-6ee2-4270-92c4-af306c3bc135"
       (reference "JP5") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/cde69679-c2be-4e69-a021-1e2034530269"
+      (reference "JP6") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005f795446"
       (reference "L2") (unit 1) (value "2.2uH") (footprint "Inductor_SMD:L_1008_2520Metric")
     )
