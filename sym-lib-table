@@ -18,4 +18,5 @@
   (lib (name "pcie_m2_ngff")(type "KiCad")(uri "${KIPRJMOD}/library/pcie_m2_ngff.kicad_sym")(options "")(descr ""))
   (lib (name "NX3DV42")(type "KiCad")(uri "${KIPRJMOD}/library/NX3DV42.kicad_sym")(options "")(descr ""))
   (lib (name "mp3422")(type "KiCad")(uri "${KIPRJMOD}/library/mp3422.kicad_sym")(options "")(descr ""))
+  (lib (name "ISL91127IRNZ")(type "KiCad")(uri "${KIPRJMOD}/library/ISL91127IRNZ.kicad_sym")(options "")(descr ""))
 )
