@@ -1,0 +1,5 @@
+.nex-menu li:hover > a,
+.nex-menu li.current > a {
+	background: #16A085;
+	color: #fff;
+}

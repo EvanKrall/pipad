@@ -1,0 +1,58 @@
+.fontawesome-icon-list .fa-hover a {
+    line-height: 32px;
+    height: 32px;
+}
+
+.bs-glyphicons {
+    overflow: hidden;
+}
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+@media (min-width: 768px) {
+    .bs-glyphicons li {
+        width: 12.5%;
+        font-size: 12px;
+    }
+}
+.bs-glyphicons li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #f9f9f9;
+}
+.bs-glyphicons li:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .bs-glyphicons li {
+        width: 12.5%;
+        font-size: 12px;
+    }
+}
+.bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.message {
+    display: none;
+    color: #6FB679;
+}
+
+html#ecwid_html body#ecwid_body .ecwid-SingleProduct .ecwid-title {
+    font: 20px Lato,Helvetica,Arial,sans-serif!important;
+}

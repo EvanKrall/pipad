@@ -1,0 +1,610 @@
+html {
+  /* Always show a scrollbar, to prevent jumping content */
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a:not([name]) {
+  cursor: pointer;
+}
+
+/* Disable selection */
+.nav a,
+.dropdown-toggle,
+.dropdown-menu,
+.btn,
+.btn a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#userbar {
+  margin-bottom: 0;
+}
+#userbar .navbar-inner {
+  border-radius: 0;
+  border-width: 0 0 1px;
+}
+#userbar .nav {
+  cursor: pointer;
+}
+#userbar .navbar-search + .nav {
+  margin-left: 10px;
+}
+
+#page-header > section {
+  margin: 0;
+}
+
+#page-header .icon-search {
+  margin-right: 0.5ex;
+}
+
+.navigation a,
+.navigation form,
+.navigation input {
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+/* Search in the navigation */
+.navigation a {
+  position: relative;
+  z-index: 2;
+}
+.navigation .navbar-search {
+  display: inline;
+  float: none;
+  position: relative;
+  top: -2.25em;
+}
+
+@media (min-width: 768px) {
+  .searchform-disabled input,
+  .searchform-enabled a.search-link i,
+  .searchform-enabled a.search-link {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+  }
+  .searchform-enabled a.search-link i {
+    position: absolute;
+  }
+}
+
+@media (max-width: 12em) {
+  .navigation {
+    clear: both;
+    float: none;
+  }
+  .navigation > li {
+    float: none;
+    display: inline;
+  }
+  .navigation > li > a {
+    padding: 10px 20px;
+    display: block;
+  }
+  .navigation .search-link {
+    display: none !important;
+  }
+  .navigation .navbar-search {
+    display: block;
+    padding: 0;
+    top: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  #page-header .searchform-enabled a {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1ex;
+    padding-right: 1ex;
+  }
+
+  .searchform-enabled a.search-link {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    /*
+    padding: 0;
+    width: 0;
+    */
+  }
+}
+
+@media (max-width: 767px) {
+  #userbar {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.layout .firstHeading {
+  display: none;
+}
+
+.nolayout .firstHeading {
+  margin-top: 10px;
+  display:none;
+}
+
+/* Add margins to preview-related elements when editing in layout mode */
+.layout .previewnote,
+.layout #editform {
+  clear: both;
+  margin: 40px 100px 20px;
+}
+
+
+/* Fix mediawiki radio & checkbox */
+label {
+  display: inline-block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: 0;
+}
+
+input + label {
+  margin-left: 0.5ex;
+}
+
+/* Hide separators if they're first in a menu */
+.dropdown-menu .divider:first-child {
+  display: none;
+}
+
+/* Slightly animate the dropdown-menus */
+.dropdown-menu li > a {
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.dropdown-menu li > a:hover {
+  -moz-transition: all 0.025s;
+  -webkit-transition: all 0.025s;
+  transition: all 0.025s;
+}
+
+/* Split a column in half */
+@media (min-width: 480px) {
+  .column-split {
+    -moz-columns: 2 20px;
+    -webkit-columns: 2 20px;
+    columns: 2 20px;
+    -moz-column-fill: balance;
+    -webkit-column-fill: balance;
+    column-fill: balance;
+  }
+}
+
+/* Footer */
+#footer .row  {
+  text-align: left; 
+}
+
+#footer .row  a {
+  font-weight: normal;
+}
+
+#footer ul,
+#footer li {
+  padding: 0;
+  list-style: none;
+}
+#footer ul {
+  display: block;
+  float: right;
+}
+#footer li {
+  display: inline;
+  margin: 1ex;
+}
+
+#footer-search {
+  display: inline;
+  position: relative;
+  top: 2px;
+}
+#footer-search .icon-search {
+  margin: 0 0 3px 6px;
+  opacity: 0.25;
+}
+
+
+/* Make the edit form larger */
+#editform textarea,
+#wpTextbox1
+{
+  width: 100%;
+}
+
+/* Hide the [] around edit */
+.editsection {
+  font-size: 0;
+}
+.editsection a {
+  font-size: 14px;
+}
+
+/* Hide the printable footer */
+.printfooter {
+  display: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.row + .row {
+  margin-top: 40px;
+}
+
+input, button, select, textarea {
+  font: inherit;
+}
+
+/* Search */
+#mw-search-top-table {
+  margin: 3em auto 0;
+}
+#mw-search-top-table input {
+  vertical-align: top;
+}
+#mw-search-top-table input[type=submit] {
+  padding: 2px 6px;
+}
+
+#content .search-types li {
+  margin-top: 0;
+}
+
+.mw-search-formheader {
+  background: none;
+  border: none;
+}
+
+.search-types {
+  float: none;
+  padding: 0;
+}
+
+.mw-search-createlink {
+  text-align: center;
+}
+
+.mw-search-createlink b {
+  font-weight: normal;
+}
+
+.mw-search-createlink a {
+}
+
+.not-editable .mw-search-createlink {
+  /* If there are no permissions to edit pages,
+   * do not display the create link on a no-results search */
+  display: none;
+}
+
+.mw-search-results {
+  margin: 20px;
+}
+
+.searchresult {
+  color: #555;
+}
+
+.searchmatch {
+  color: #333;
+}
+
+.mw-search-result-data {
+  color: #999;
+}
+
+.mw-search-nonefound {
+  color: #999;
+  font-size: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.mw-search-nonefound:after{
+  content: "ಠ ̯ಠ";
+  color: #ccc;
+  margin-left: 3ex;
+}
+
+.mw-search-pager-bottom {
+  position: relative;
+  color: transparent;
+}
+.mw-search-pager-bottom a {
+  float: left;
+  padding: 0 20px;
+}
+
+.mw-numlink {
+  display: none;
+}
+
+/* Preferences */
+#preferences .mainLegend {
+  display: none;
+}
+
+#preftoc {
+  margin: 40px 20px -2px;
+}
+
+#preferences {
+  border: 1px solid #ccc;
+  margin: 0 20px;
+}
+
+#preftoc ul,
+#preftoc li {
+  display: inline;
+  list-style: none;
+}
+#preftoc li a {
+  position: relative;
+  z-index: 2;
+  font: inherit;
+  margin: 0;
+  padding: 8px 15px;
+  display: inline-block;
+}
+#preftoc li.selected a {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  color: inherit;
+  cursor: default;
+  padding: 7px 14px;
+}
+#preferences fieldset.prefsection {
+  margin: 0;
+  padding: 40px;
+}
+
+#preferences legend {
+  border-bottom: none;
+}
+
+#preferences fieldset + fieldset > legend {
+  padding-top: 40px;
+}
+
+#preferences .mw-label label {
+  white-space: nowrap;
+  margin: 0;
+  color: #777;
+}
+
+#preferences td {
+  padding: 5px;
+}
+
+#preferences .htmlform-tip {
+  color: #999;
+  padding: 1em 0 3em 12em;
+}
+
+#preferences div.mw-prefs-buttons {
+  margin: 20px auto 0;
+  padding: 40px 40px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.mw-prefs-buttons a,
+.mw-prefs-buttons input {
+  font: inherit;
+  padding: 3px 15px;
+}
+.mw-prefs-buttons a {
+  padding: 8px 20px;
+  float: left;
+}
+.mw-prefs-buttons input {
+  float: right;
+}
+
+
+/* History */
+
+#contentSub br {
+  display: none;
+}
+
+#mw-revision-info,
+#mw-revision-nav {
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+}
+
+#mw-revision-info {
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  font-size: 16px;
+  padding-bottom: 0.25em;
+}
+#mw-revision-nav {
+  border-radius: 0 0 6px 6px;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+/* Add some extra vertical spacing for phones */
+@media (max-width: 767px) {
+  [class*="span"] + [class*="span"] {
+    clear: both;
+    margin-top: 40px;
+  }
+}
+
+/* Extra padding */
+@media (min-width: 768px) {
+  .pad-left-small,
+  .pad-right-small,
+  .pad-sides-small,
+  .pad-left,
+  .pad-right,
+  .pad-sides {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .pad-left-small,
+  .pad-sides-small {
+    padding-left: 10px;
+  }
+  .pad-right-small,
+  .pad-sides-small {
+    padding-right: 10px;
+  }
+  .pad-left,
+  .pad-sides {
+    padding-left: 20px;
+  }
+  .pad-right,
+  .pad-sides {
+    padding-right: 20px;
+  }
+  .pad-left-small .column-split,
+  .pad-right-small .column-split,
+  .pad-sides-small .column-split {
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+  }
+  .pad-left .column-split,
+  .pad-right .column-split,
+  .pad-sides .column-split {
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    column-gap: 40px;
+  }
+}
+
+section#content a.external,
+section#content a.external[href ^="gopher://"] {
+    /*Removed for aesthetic purposes, feel free to uncomment if you prefer to show the external link icon*/
+	/* @embed */
+	/*background: url(images/external-link-ltr-icon.png) center right no-repeat;*/
+	padding-right: 2px;
+}
+section#content a.external[href ^="https://"],
+.link-https {
+	/* @embed */
+	background: url(images/lock-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href ^="mailto:"],
+.link-mailto {
+	/* @embed */
+	background: url(images/mail-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href ^="news:"] {
+	/* @embed */
+	background: url(images/news-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href ^="ftp://"],
+.link-ftp {
+	/* @embed */
+	background: url(images/file-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href ^="irc://"],
+section#content a.external[href ^="ircs://"],
+.link-irc {
+	/* @embed */
+	background: url(images/talk-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href $=".ogg"], section#content a.external[href $=".OGG"],
+section#content a.external[href $=".mid"], section#content a.external[href $=".MID"],
+section#content a.external[href $=".midi"], section#content a.external[href $=".MIDI"],
+section#content a.external[href $=".mp3"], section#content a.external[href $=".MP3"],
+section#content a.external[href $=".wav"], section#content a.external[href $=".WAV"],
+section#content a.external[href $=".wma"], section#content a.external[href $=".WMA"],
+.link-audio {
+	/* @embed */
+	background: url(images/audio-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+section#content a.external[href $=".ogm"], section#content a.external[href $=".OGM"],
+section#content a.external[href $=".avi"], section#content a.external[href $=".AVI"],
+section#content a.external[href $=".mpeg"], section#content a.external[href $=".MPEG"],
+.link-video {
+	/* @embed */
+	background: url(images/video-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+
+/** Bootstrap doesn't style non-typed inputs, apparently **/
+input:not([type]) {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(85, 85, 85);
+    border-radius: 3px 3px 3px 3px;
+}
+input:not([type]):focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+/** Bootstrap shouldn't set input heights (line-height should be enough)
+ * (redefining it exactly the same so that it doesn't need !important,
+ * and can be easily redefined in theme.css **/
+select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  height: auto;
+}
+
+/* fix the unresponsive logo image */
+.mediawiki-logo{
+    width:90% !important;
+    height:auto;
+    display:block;
+}
+
+.logo-container {margin-top:20px;}
+
+
+/* Demo Overides */
+
+.logo-container {
+    display:none;
+}

@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://wiki.radxa.com/Rock3/CM3/pinout -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Rock3_CM3_pinout - Radxa Wiki_files/analytics.js"></script><script async="" src="./Rock3_CM3_pinout - Radxa Wiki_files/load.php"></script>
+
+<title>Rock3/CM3/pinout - Radxa Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.3">
+<link rel="shortcut icon" href="https://wiki.radxa.com/Rock3/radxa_x_64.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.radxa.com/mw/opensearch_desc.php" title="Radxa Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.radxa.com/mw/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Radxa Wiki Atom feed" href="https://wiki.radxa.com/mw/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/load(1).php">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/bootstrap-green.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/screen.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/theme.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/jquery-ui.min.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/font.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/typography.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/misc.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/menu.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/menu-blue.css" media="screen">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/social-buttons.css" media="screen"><style>
+ul.bss{position:relative;list-style:none;padding:0;margin:0;overflow:hidden;display:none}li.bss-slide{position:absolute;display:none}ul.bss-controls{list-style:none;margin:0;padding:0;z-index:9999;margin-top:5px;display:none}ul.bss-controls.v-centered li a{position:absolute}ul.bss-controls.v-centered li.bss-next a{right:0;background:#fff;padding:5px}ul.bss-controls.v-centered li.bss-prev a{left:0;background:#fff;padding:5px}ol.bss-markers{list-style:none;padding:0;margin:0;width:100%;display:none}ol.bss-markers.h-centered{text-align:center;margin-top:11px}ol.bss-markers li{display:inline}ol.bss-markers li a{padding:5px 10px;background:none repeat scroll 0% 0% #000;color:#FFF;margin:5px;text-decoration:none;margin-top:5px}ol.bss-markers li a:hover{background:none repeat scroll 0% 0% #999}p.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5;size:24;color:#000}h2.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.7}h3.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}h4.bss-caption{display:block;size:42;width:100%;margin:0;padding:2%;position:absolute;bottom:0;background:#fff;opacity:0.5}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:7d2cc887121ffe243a0bd2f0b3cedae4 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(https://wiki.radxa.com/mw/resources/src/mediawiki.action/images/green-checkmark.png?2014-08-27T21:45:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:a71b6527faa0851bef5cf6359dbfd5c1 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Rock3_CM3_pinout - Radxa Wiki_files/load(2).php">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-css:7:055353e9ed091aa075288819bb455ad1 */</style>
+<script src="./Rock3_CM3_pinout - Radxa Wiki_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Rock3_CM3_pinout - Radxa Wiki_files/shopifystore.js"></script><script type="text/javascript" async="" src="./Rock3_CM3_pinout - Radxa Wiki_files/ga.js"></script><script src="./Rock3_CM3_pinout - Radxa Wiki_files/load(3).php"></script><script src="./Rock3_CM3_pinout - Radxa Wiki_files/load(4).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rock3/CM3/pinout","wgTitle":"Rock3/CM3/pinout","wgCurRevisionId":6771,"wgRevisionId":6771,"wgArticleId":1163,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rock3/CM3/pinout","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"previewDialog":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"bootstraphalcyon","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250
+,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: radxa_wiki-radxa_wiki:resourceloader:filter:minify-js:7:39521c0c6f731732e1b5f897f7fb5d15 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="./Rock3_CM3_pinout - Radxa Wiki_files/load(5).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mw/skins/bootstrapskin/csshover.min.htc")}</style><![endif]--><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2992653-31']);
+  _gaq.push(['_setDomainName', 'mediawikibootstrapskin.co.uk']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script type="text/javascript">
+  var ShopifyStoreConfig = {shop:"radxa.myshopify.com", collections:[11863785]};
+  (function() {
+	  	      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; 
+			  		      s.src = "//widgets.shopifyapps.com/assets/shopifystore.js";
+			  		      var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+						  			    })();  
+  </script>
+	  <noscript>Please enable javascript, or <a href="http://radxa.myshopify.com">click here</a> to visit my <a href="http://www.shopify.com/tour/ecommerce-website">ecommerce web site</a> powered by Shopify.</noscript><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Rock3_CM3_pinout skin-bootstrapskin action-view" style="display: block;">
+<div id="userbar" class="bg-cyan">
+  <div class="body">
+      <div class="col-md-12 hidden-xs hidden-sm">
+      <ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
+	    <li><a href="https://wiki.radxa.com/Home"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="https://wiki.radxa.com/news"><i class="fa fa-rss"></i>News</a></li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-bars"></i>Products</a>
+			<div class="grid-container3">
+			<ul>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/zero">Zero</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/zero"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/zero/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/zero/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/zero/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/zero/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rock3">ROCK 3</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rock3"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rock3/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+							<li><a href="https://wiki.radxa.com/rock3/CM3"><i class="fa fa-laptop"></i>Compute Module</a></li>
+						</ul>
+					</div>
+				</li>
+				
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpi4">ROCK Pi 4</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpi4"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpi4/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpi4/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiS">ROCK Pi S</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiS"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiS/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/hardware"><i class="fa fa-file"></i> Hardware</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/downloads"><i class="fa fa-download"></i>Download</a></li>
+							<li><a href="https://wiki.radxa.com/rockpiS/FAQs"><i class="fa fa-question"></i>FAQs</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiE">ROCK Pi E</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiE"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiE/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiX">ROCK Pi X</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiX"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiX/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/rockpiN10">ROCK Pi N10</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10"><i class="fa fa-arrow-up"></i>Main Page</a></li>
+				 			<li><a href="https://wiki.radxa.com/rockpiN10/getting_started"><i class="fa fa-plus-square"></i>Getting Started</a></li>
+						</ul>
+					</div>
+				</li>
+				<li aria-haspopup="true"><a href="https://wiki.radxa.com/accessories">Accessories</a>
+					<div class="grid-container3">
+						<ul>
+				 			<li><a href="https://wiki.radxa.com/PoE_HAT"><i class="fa fa-arrow-up"></i>PoE HAT</a></li>
+				 			<li><a href="https://wiki.radxa.com/SATA_HAT"><i class="fa fa-arrow-up"></i>SATA HAT</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="https://wiki.radxa.com/Buy"><i class="fa fa-shopping-cart"></i>Buy</a>
+			<div class="grid-container3">
+			<ul>
+				<!--<li><a href="#shopify-store"><i class="fa fa-plane"></i>Radxa Store</a></li> -->
+				<li><a href="https://wiki.radxa.com/Buy"><i class="fa fa-truck"></i>Distributors</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-users"></i>Community</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="http://forum.radxa.com/"><i class="fa fa-comments"></i>Forum</a></li>
+				<li><a href="http://github.com/radxa"><i class="fa fa-github"></i>Github</a></li>
+			</ul>
+			</div>
+		</li>
+		<li aria-haspopup="true">
+			<a href="javascript:void(0)"><i class="fa fa-envelope"></i>Contact</a>
+			<div class="grid-container3">
+			<ul>
+				<li><a href="https://wiki.radxa.com/Special:SpecialContact"><i class="fa fa-mail-reply-all"></i>Contact us</a></li>
+				<li><a href="https://wiki.radxa.com/about"><i class="fa fa-user"></i>About Radxa</a></li>
+			</ul>
+			</div>
+		</li>							
+		<li aria-haspopup="true"><a href="javascript:void(0)"><i class="fa fa-pencil-square"></i>Edit</a>
+			<div class="grid-container3">
+				<ul>
+        		<li>
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+		  
+			<a href="https://wiki.radxa.com/Rock3/CM3/pinout#"><i class="fa fa-question"></i> Personal</a>
+				<div class="grid-container3">
+					<ul>
+					<li id="pt-createaccount"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rock3%2FCM3%2Fpinout&amp;type=signup">Create account</a></li><li id="pt-login"><a href="https://wiki.radxa.com/mw/index.php?title=Special:UserLogin&amp;returnto=Rock3%2FCM3%2Fpinout" title="You are encouraged to log in; however, it is not mandatory [ctrl-option-o]" accesskey="o">Log in</a></li>					</ul>
+				</div>	  
+          
+<!-- /0 -->
+</li>
+        		<li aria-haspopup="true">
+<!-- 0 -->
+          <a href="https://wiki.radxa.com/Rock3/CM3/pinout#"><i class="fa fa-book"></i> Page</a>
+				<div class="grid-container3">
+				<ul>
+              
+                                                                                        
+                <li id="ca-nstab-main" class="selected"><a href="https://wiki.radxa.com/Rock3/CM3/pinout" title="View the content page [ctrl-option-c]" accesskey="c" tabindex="-1">Page</a></li><li id="ca-talk" class="new"><a href="https://wiki.radxa.com/mw/index.php?title=Talk:Rock3/CM3/pinout&amp;action=edit&amp;redlink=1" title="Discussion about the content page [ctrl-option-t]" accesskey="t" tabindex="-1">Discussion</a></li><li id="ca-viewsource"><a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;action=edit" title="This page is protected.
+You can view its source [ctrl-option-e]" accesskey="e" tabindex="-1">View source</a></li><li id="ca-history" class="collapsible"><a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h" tabindex="-1">History</a></li></ul></div>
+		    	  
+		  
+<!-- /0 -->
+</li>
+				<li aria-haspopup="true">
+<!-- 0 -->
+
+<!-- /0 -->
+</li>
+				</ul>
+			</div>
+		</li>
+		<li class="right search">					
+					<form class="navbar-search" action="https://wiki.radxa.com/mw/index.php" id="searchform">					
+						<div class="input">
+							<button type="submit" class="button">Go</button>
+							<input id="searchInput" type="search" accesskey="f" title="Special:Search" placeholder="Search" name="search" value="" autocomplete="off">
+						</div>					
+					</form>
+		</li>				
+		<li aria-haspopup="true">
+<!-- 0 -->
+              <a href="https://wiki.radxa.com/Rock3/CM3/pinout#"><i class="fa fa-wrench"></i> Tools</a>
+              <div class="grid-container3">
+              <ul>
+                <li id="t-info"><a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;action=info">Page information</a></li><li id="t-permalink"><a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;oldid=6771" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-print"><a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;printable=yes" rel="alternate" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li><li class="divider"></li><li id="t-specialpages"><a href="https://wiki.radxa.com/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li><li id="t-recentchangeslinked"><a href="https://wiki.radxa.com/Special:RecentChangesLinked/Rock3/CM3/pinout" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li><li class="divider"></li><li id="t-whatlinkshere"><a href="https://wiki.radxa.com/Special:WhatLinksHere/Rock3/CM3/pinout" title="A list of all wiki pages that link here [ctrl-option-j]" accesskey="j">What links here</a></li>				
+            </ul>
+			</div>
+			
+			</li>
+		  
+          </ul>
+
+            
+		   
+          
+<!-- /0 -->
+
+	
+       
+	  
+        
+<!-- 0 -->
+         
+         
+<!-- /LANGUAGES -->
+		
+      </div>
+	  </div>
+
+      <div class="pull-right">
+              </div>
+  </div>
+      
+<!-- 0 -->
+
+<!-- /0 -->
+
+      
+ 
+
+
+    <div id="mw-page-base" class="noprint"></div>
+    <div id="mw-head-base" class="noprint"></div>
+
+    <!-- Header -->
+    <div id="page-header" class="container-fluid signed-out">
+      <div class="col-md-4 pull-left">
+
+                        <ul class="nav logo-container" role="navigation"><li id="p-logo"><a href="https://wiki.radxa.com/Home" title="Visit the main page"><img src="./Rock3_CM3_pinout - Radxa Wiki_files/radxa_logo.png" alt="Radxa Wiki" style="width:90%"></a></li><li></li></ul>
+	  
+	  </div>
+    </div>
+
+    
+    
+    <!-- content -->
+    <section id="content" class="mw-body container-fluid 0">
+      <div id="top"></div>
+      <div id="mw-js-message" style="display:none;"></div>
+            <!-- bodyContent -->
+      <div id="bodyContent">
+                        <!-- jumpto -->
+        <div id="jump-to-nav" class="mw-jump">
+          Jump to: <a href="https://wiki.radxa.com/Rock3/CM3/pinout#mw-head">navigation</a>,
+          <a href="https://wiki.radxa.com/Rock3/CM3/pinout#p-search">search</a>
+        </div>
+        <!-- /jumpto -->
+                
+        <!-- innerbodycontent -->
+                  <div id="innerbodycontent" class="row nolayout"><div class="offset1 span10">
+            <h1 id="firstHeading" class="firstHeading page-header">
+              <span dir="auto">Rock3/CM3/pinout</span>
+            </h1>
+            <!-- subtitle -->
+            <div id="contentSub"><span class="subpages">&lt; <a href="https://wiki.radxa.com/Rock3" title="Rock3">Rock3</a>‎ | <a href="https://wiki.radxa.com/Rock3/CM3" title="Rock3/CM3">CM3</a></span></div>
+            <!-- /subtitle -->
+                        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hf-nsheader"></div><div class="hf-header"></div><div class="col-md-12">
+<div class="col-sm-12">
+      <ul class="nav nav-pills nav-tabs-lighter">
+        <li><a href="https://wiki.radxa.com/Rock3" title="Rock3"> Main</a></li>
+        <li><a href="https://wiki.radxa.com/Rock3/getting_started" title="Rock3/getting started"> Getting Started</a></li>
+        <li><a href="https://wiki.radxa.com/Rock3/hardware" title="Rock3/hardware"> Hardware</a></li>
+        <li><a href="https://wiki.radxa.com/Rock3/downloads" title="Rock3/downloads"> Downloads</a></li>
+        <li><a href="https://wiki.radxa.com/Rock3/CM3" title="Rock3/CM3"> CM3</a></li>
+        <li><a href="https://wiki.radxa.com/Rock3/FAQs" title="Rock3/FAQs"> FAQs</a></li>
+      </ul>
+</div>
+</div>
+<div class="col-md-12">
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <strong class="selflink">English</strong></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout/zh_cn&amp;action=edit&amp;redlink=1" class="new" title="Rock3/CM3/pinout/zh cn (page does not exist)">中文（中国大陆）‎</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout/es_es&amp;action=edit&amp;redlink=1" class="new" title="Rock3/CM3/pinout/es es (page does not exist)">español</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout/de_DE&amp;action=edit&amp;redlink=1" class="new" title="Rock3/CM3/pinout/de DE (page does not exist)">Deutsch</a></div> 
+<div class="btn btn-primary pull-right"><i class="fa fa-language"></i> <a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout/pt_BR&amp;action=edit&amp;redlink=1" class="new" title="Rock3/CM3/pinout/pt BR (page does not exist)">português do Brasil</a></div>
+<div class="box-Title"></div>
+</div>
+<pre>   <a href="https://wiki.radxa.com/Rock3" title="Rock3"> ROCK 3</a> &gt; <a href="https://wiki.radxa.com/Rock3/CM3" title="Rock3/CM3"> Compute Module</a> &gt; <strong class="selflink"> CM3 Pinout</strong>
+</pre>
+<table class="wikitable">
+
+<tbody><tr style="text-align:center;">
+<th colspan="2" style="background-color:#ffffff;"> Connector 1
+</th>
+<th colspan="2" style="background-color:#ffffff;"> Connector 2
+</th>
+<th colspan="2" style="background-color:#ffffff;"> Connector 3
+</th></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> Number
+</td>
+<td> Pin Name
+</td>
+<td style="background-color:#c0c0c0;"> Number
+</td>
+<td> Pin Name
+</td>
+<td style="background-color:#c0c0c0;"> Number
+</td>
+<td> Pin Name
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 1
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 101
+</td>
+<td> USB_OTG0_ID
+</td>
+<td style="background-color:#c0c0c0;"> 1
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 2
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 102
+</td>
+<td> PCIE20_CLKREQN_M2
+</td>
+<td style="background-color:#c0c0c0;"> 2
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 3
+</td>
+<td> PHY1_MDI3+
+</td>
+<td style="background-color:#c0c0c0;"> 103
+</td>
+<td> USB_OTG0_DM
+</td>
+<td style="background-color:#c0c0c0;"> 3
+</td>
+<td> MIPI_DSI_TX0_D2N/LVDS_TX0_D2N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 4
+</td>
+<td> PHY1_MDI1+
+</td>
+<td style="background-color:#c0c0c0;"> 104
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 4
+</td>
+<td> GPIO3_A1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 5
+</td>
+<td> PHY1_MDI3-
+</td>
+<td style="background-color:#c0c0c0;"> 105
+</td>
+<td> USB_OTG0_DP
+</td>
+<td style="background-color:#c0c0c0;"> 5
+</td>
+<td> MIPI_DSI_TX0_D2P/LVDS_TX0_D2P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 6
+</td>
+<td> PHY1_MDI1-
+</td>
+<td style="background-color:#c0c0c0;"> 106
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 6
+</td>
+<td> GPIO3_B4
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 7
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 107
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 7
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 8
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 108
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 8
+</td>
+<td> GPIO3_C1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 9
+</td>
+<td> PHY1_MDI2-
+</td>
+<td style="background-color:#c0c0c0;"> 109
+</td>
+<td> PCIE_NRST
+</td>
+<td style="background-color:#c0c0c0;"> 9
+</td>
+<td> MIPI_DSI_TX0_D3N/LVDS_TX0_D3N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 10
+</td>
+<td> PHY1_MDI0-
+</td>
+<td style="background-color:#c0c0c0;"> 110
+</td>
+<td> PCIE20_REFCLKP
+</td>
+<td style="background-color:#c0c0c0;"> 10
+</td>
+<td> GPIO3_C2
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 11
+</td>
+<td> PHY1_MDI2+
+</td>
+<td style="background-color:#c0c0c0;"> 111
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 11
+</td>
+<td> MIPI_DSI_TX0_D3P/LVDS_TX0_D3P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 12
+</td>
+<td> PHY1_MDI0+
+</td>
+<td style="background-color:#c0c0c0;"> 112
+</td>
+<td> PCIE20_REFCLKN
+</td>
+<td style="background-color:#c0c0c0;"> 12
+</td>
+<td> GPIO3_C3
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 13
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 113
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 13
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 14
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 114
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 14
+</td>
+<td> PCIE_PWREN_H
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 15
+</td>
+<td> PHY1_LED2_Y
+</td>
+<td style="background-color:#c0c0c0;"> 115
+</td>
+<td> MIPI_CSI_RX_D0N
+</td>
+<td style="background-color:#c0c0c0;"> 15
+</td>
+<td> EDP_TX_D0P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 16
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 116
+</td>
+<td> PCIE20_RXP
+</td>
+<td style="background-color:#c0c0c0;"> 16
+</td>
+<td> NC
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 17
+</td>
+<td> PHY1_LED1_G
+</td>
+<td style="background-color:#c0c0c0;"> 117
+</td>
+<td> MIPI_CSI_RX_D0P
+</td>
+<td style="background-color:#c0c0c0;"> 17
+</td>
+<td> EDP_TX_D0N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 18
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 118
+</td>
+<td> PCIE20_RXN
+</td>
+<td style="background-color:#c0c0c0;"> 18
+</td>
+<td> GPIO_D5
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 19
+</td>
+<td> PHY1_LED0_Y1
+</td>
+<td style="background-color:#c0c0c0;"> 119
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 19
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 20
+</td>
+<td> EEPROM_NWP
+</td>
+<td style="background-color:#c0c0c0;"> 120
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 20
+</td>
+<td> GPIO_D6
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 21
+</td>
+<td> PI_NLED_ACTIVITY
+</td>
+<td style="background-color:#c0c0c0;"> 121
+</td>
+<td> MIPI_CSI_RX_D1N
+</td>
+<td style="background-color:#c0c0c0;"> 21
+</td>
+<td> EDP_TX_D1P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 22
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 122
+</td>
+<td> PCIE20_TXP
+</td>
+<td style="background-color:#c0c0c0;"> 22
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 23
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 123
+</td>
+<td> MIPI_CSI_RX_D1P
+</td>
+<td style="background-color:#c0c0c0;"> 23
+</td>
+<td> EDP_TX_D1N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 24
+</td>
+<td> PWM3_IR
+</td>
+<td style="background-color:#c0c0c0;"> 124
+</td>
+<td> PCIE20_TXN
+</td>
+<td style="background-color:#c0c0c0;"> 24
+</td>
+<td> GPIO2_C6
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 25
+</td>
+<td> I2S1_SDO0_M1
+</td>
+<td style="background-color:#c0c0c0;"> 125
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 25
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 26
+</td>
+<td> I2S1_LRCK_TX_M1
+</td>
+<td style="background-color:#c0c0c0;"> 126
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 26
+</td>
+<td> SARADC_VIN0_KEY/RECOVERY
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 27
+</td>
+<td> I2S1_SDI0_M1
+</td>
+<td style="background-color:#c0c0c0;"> 127
+</td>
+<td> MIPI_CSI_RX_CLK0N
+</td>
+<td style="background-color:#c0c0c0;"> 27
+</td>
+<td> EDP_TX_D2P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 28
+</td>
+<td> SPI0_CSO_MO
+</td>
+<td style="background-color:#c0c0c0;"> 128
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 28
+</td>
+<td> SARADC_VIN1_HW_ID
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 29
+</td>
+<td> I2S1_LRCK_RX_M1
+</td>
+<td style="background-color:#c0c0c0;"> 129
+</td>
+<td> MIPI_CSI_RX_CLK0P
+</td>
+<td style="background-color:#c0c0c0;"> 29
+</td>
+<td> EDP_TX_D2N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 30
+</td>
+<td> SPI0_MISO_MO
+</td>
+<td style="background-color:#c0c0c0;"> 130
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 30
+</td>
+<td> SARADC_VIN2_HP_HOOK
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 31
+</td>
+<td> PWM11
+</td>
+<td style="background-color:#c0c0c0;"> 131
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 31
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 32
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 132
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 32
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 33
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 133
+</td>
+<td> MIPI_CSI_RX_D2N
+</td>
+<td style="background-color:#c0c0c0;"> 33
+</td>
+<td> EDP_TX_D3P
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 34
+</td>
+<td> I2S1_SDO2_M1
+</td>
+<td style="background-color:#c0c0c0;"> 134
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 34
+</td>
+<td> 4G_DISABLE
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 35
+</td>
+<td> I2C2_SCL_M1
+</td>
+<td style="background-color:#c0c0c0;"> 135
+</td>
+<td> MIPI_CSI_RX_D2P
+</td>
+<td style="background-color:#c0c0c0;"> 35
+</td>
+<td> EDP_TX_D3N
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 36
+</td>
+<td> I2C2_SDA_M1
+</td>
+<td style="background-color:#c0c0c0;"> 136
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 36
+</td>
+<td> HP_DET_L
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 37
+</td>
+<td> SARADC_IN3
+</td>
+<td style="background-color:#c0c0c0;"> 137
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 37
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 38
+</td>
+<td> SPI3_CLK_M0
+</td>
+<td style="background-color:#c0c0c0;"> 138
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 38
+</td>
+<td> PDM_SDI2_M0_ADC
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 39
+</td>
+<td> SPI3_CSO_M0
+</td>
+<td style="background-color:#c0c0c0;"> 139
+</td>
+<td> MIPI_CSI_RX_D3N
+</td>
+<td style="background-color:#c0c0c0;"> 39
+</td>
+<td> EDP_TX_AUXP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 40
+</td>
+<td> SPI3_MISO_M0
+</td>
+<td style="background-color:#c0c0c0;"> 140
+</td>
+<td> MIPI_CSI_RX_CLK1N
+</td>
+<td style="background-color:#c0c0c0;"> 40
+</td>
+<td> PDM_CLK1_M0
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 41
+</td>
+<td> I2S1_MCLK_M1
+</td>
+<td style="background-color:#c0c0c0;"> 141
+</td>
+<td> MIPI_CSI_RX_D3P
+</td>
+<td style="background-color:#c0c0c0;"> 41
+</td>
+<td> EDP_TX_AUXN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 42
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 142
+</td>
+<td> MIPI_CSI_RX_CLK1P
+</td>
+<td style="background-color:#c0c0c0;"> 42
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 43
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 143
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 43
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 44
+</td>
+<td> SPI3_MOSI_M0
+</td>
+<td style="background-color:#c0c0c0;"> 144
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 44
+</td>
+<td> I2C3_SCL_ACODEC
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 45
+</td>
+<td> I2S1_SDI1_M1
+</td>
+<td style="background-color:#c0c0c0;"> 145
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 45
+</td>
+<td> USB3_HOST1_DP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 46
+</td>
+<td> PMW4
+</td>
+<td style="background-color:#c0c0c0;"> 146
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 46
+</td>
+<td> I2C3_SDA_ACODEC
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 47
+</td>
+<td> I2S1_SDI2_M1
+</td>
+<td style="background-color:#c0c0c0;"> 147
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 47
+</td>
+<td> USB3_HOST1_DM
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 48
+</td>
+<td> PMW0_M0
+</td>
+<td style="background-color:#c0c0c0;"> 148
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 48
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 49
+</td>
+<td> I2S1_SCLK_TX_M1
+</td>
+<td style="background-color:#c0c0c0;"> 149
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 49
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 50
+</td>
+<td> PMW0_M1
+</td>
+<td style="background-color:#c0c0c0;"> 150
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 50
+</td>
+<td> HPL_OUT
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 51
+</td>
+<td> UART2_RX
+</td>
+<td style="background-color:#c0c0c0;"> 151
+</td>
+<td> HDMI_TX_CEC_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 51
+</td>
+<td> USB3_HOST1_SSTXP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 52
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 152
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 52
+</td>
+<td> HP_SNS
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 53
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 153
+</td>
+<td> HDMI_TX_HPD_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 53
+</td>
+<td> USB3_HOST1_SSTXN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 54
+</td>
+<td> I2S1_SDI3_M1
+</td>
+<td style="background-color:#c0c0c0;"> 154
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 54
+</td>
+<td> HPR_OUT
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 55
+</td>
+<td> UART2_TX
+</td>
+<td style="background-color:#c0c0c0;"> 155
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 55
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 56
+</td>
+<td> I2C2_SCL_MO
+</td>
+<td style="background-color:#c0c0c0;"> 156
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 56
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 57
+</td>
+<td> SDMMC0_CLK
+</td>
+<td style="background-color:#c0c0c0;"> 157
+</td>
+<td> MIPI_DSI_TX0_D0N/LVDS_TX0_D0N
+</td>
+<td style="background-color:#c0c0c0;"> 57
+</td>
+<td> USB3_HOST1_SSRXP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 58
+</td>
+<td> I2C2_SDA_MO
+</td>
+<td style="background-color:#c0c0c0;"> 158
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 58
+</td>
+<td> SPKN_OUT
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 59
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 159
+</td>
+<td> MIPI_DSI_TX0_D0P/LVDS_TX0_D0P
+</td>
+<td style="background-color:#c0c0c0;"> 59
+</td>
+<td> USB3_HOST1_SSRXN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 60
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 160
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 60
+</td>
+<td> SPKP_OUT
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 61
+</td>
+<td> SDMMC0_D3
+</td>
+<td style="background-color:#c0c0c0;"> 161
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 61
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 62
+</td>
+<td> SDMMC0_CMD
+</td>
+<td style="background-color:#c0c0c0;"> 162
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 62
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 63
+</td>
+<td> SDMMC0_D0
+</td>
+<td style="background-color:#c0c0c0;"> 163
+</td>
+<td> MIPI_DSI_TX0_D1N/LVDS_TX0_D1N
+</td>
+<td style="background-color:#c0c0c0;"> 63
+</td>
+<td> USB2_HOST2_DP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 64
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 164
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 64
+</td>
+<td> MIC1_IN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 65
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 165
+</td>
+<td> MIPI_DSI_TX0_D1P/LVDS_TX0_D1P
+</td>
+<td style="background-color:#c0c0c0;"> 65
+</td>
+<td> USB2_HOST2_DM
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 66
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 166
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 66
+</td>
+<td> MIC2_IN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 67
+</td>
+<td> SDMMC0_D1
+</td>
+<td style="background-color:#c0c0c0;"> 167
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 67
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 68
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 168
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 68
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 69
+</td>
+<td> SDMMC0_D2
+</td>
+<td style="background-color:#c0c0c0;"> 169
+</td>
+<td> MIPI_DSI_TX0_CLKN/LVDS_TX0_CLKN
+</td>
+<td style="background-color:#c0c0c0;"> 69
+</td>
+<td> USB2_HOST3_DP
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 70
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 170
+</td>
+<td> HDMI_TX2P_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 70
+</td>
+<td> SPDIF_TX_M2
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 71
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 171
+</td>
+<td> MIPI_DSI_TX0_CLKP/LVDS_TX0_CLKP
+</td>
+<td style="background-color:#c0c0c0;"> 71
+</td>
+<td> USB2_HOST3_DM
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 72
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 172
+</td>
+<td> HDMI_TX2N_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 72
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 73
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 173
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 73
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 74
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 174
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 74
+</td>
+<td> WIFI_PWREN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 75
+</td>
+<td> SDMMC_PWREN
+</td>
+<td style="background-color:#c0c0c0;"> 175
+</td>
+<td> MIPI_DSI_TX1_D0N
+</td>
+<td style="background-color:#c0c0c0;"> 75
+</td>
+<td> PDM_CLK0_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 76
+</td>
+<td> SDMMC0_DET_L
+</td>
+<td style="background-color:#c0c0c0;"> 176
+</td>
+<td> HDMI_TX1P_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 76
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 77
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 177
+</td>
+<td> MIPI_DSI_TX1_D0P
+</td>
+<td style="background-color:#c0c0c0;"> 77
+</td>
+<td> PDM_SDIO_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 78
+</td>
+<td> GPIO_VREF
+</td>
+<td style="background-color:#c0c0c0;"> 178
+</td>
+<td> HDMI_TX1N_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 78
+</td>
+<td> VCC_BAT-
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 79
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 179
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 79
+</td>
+<td> PDM_CLK1_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 80
+</td>
+<td> I2C0_SCL_PMIC
+</td>
+<td style="background-color:#c0c0c0;"> 180
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 80
+</td>
+<td> VCC_BAT-
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 81
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 181
+</td>
+<td> MIPI_DSI_TX1_D1N
+</td>
+<td style="background-color:#c0c0c0;"> 81
+</td>
+<td> PDM_SDI1_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 82
+</td>
+<td> I2C0_SDA_PMIC
+</td>
+<td style="background-color:#c0c0c0;"> 182
+</td>
+<td> HDMI_TX0P_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 82
+</td>
+<td> VCC_BAT-
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 83
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 183
+</td>
+<td> MIPI_DSI_TX1_D1P
+</td>
+<td style="background-color:#c0c0c0;"> 83
+</td>
+<td> PDM_SDI2_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 84
+</td>
+<td> +3V3
+</td>
+<td style="background-color:#c0c0c0;"> 184
+</td>
+<td> HDMI_TX0N_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 84
+</td>
+<td> VCC_BAT+
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 85
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 185
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 85
+</td>
+<td> PDM_SDI3_M1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 86
+</td>
+<td> +3V3
+</td>
+<td style="background-color:#c0c0c0;"> 186
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 86
+</td>
+<td> VCC_BAT+
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 87
+</td>
+<td> +5V_INPUT
+</td>
+<td style="background-color:#c0c0c0;"> 187
+</td>
+<td> MIPI_DSI_TX1_CLKN
+</td>
+<td style="background-color:#c0c0c0;"> 87
+</td>
+<td> GPIO_B3
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 88
+</td>
+<td> +1V8
+</td>
+<td style="background-color:#c0c0c0;"> 188
+</td>
+<td> HDMI_TXCLKP_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 88
+</td>
+<td> VCC_BAT+
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 89
+</td>
+<td> WL_NDIS
+</td>
+<td style="background-color:#c0c0c0;"> 189
+</td>
+<td> MIPI_DSI_TX1_CLKP
+</td>
+<td style="background-color:#c0c0c0;"> 89
+</td>
+<td> GPIO_B4
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 90
+</td>
+<td> +1V8
+</td>
+<td style="background-color:#c0c0c0;"> 190
+</td>
+<td> HDMI_TXCLKN_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 90
+</td>
+<td> TS
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 91
+</td>
+<td> BT_NDIS
+</td>
+<td style="background-color:#c0c0c0;"> 191
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 91
+</td>
+<td> NC
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 92
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 192
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 92
+</td>
+<td> N17778843
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 93
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 193
+</td>
+<td> MIPI_DSI_TX1_D2N
+</td>
+<td style="background-color:#c0c0c0;"> 93
+</td>
+<td> GPIO_C1
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 94
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 194
+</td>
+<td> MIPI_DSI_TX1_D3N
+</td>
+<td style="background-color:#c0c0c0;"> 94
+</td>
+<td> USB_5V_IN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 95
+</td>
+<td> NPWR_LED
+</td>
+<td style="background-color:#c0c0c0;"> 195
+</td>
+<td> MIPI_DSI_TX1_D2P
+</td>
+<td style="background-color:#c0c0c0;"> 95
+</td>
+<td> GPIO_C4
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 96
+</td>
+<td> NC
+</td>
+<td style="background-color:#c0c0c0;"> 196
+</td>
+<td> MIPI_DSI_TX1_D3P
+</td>
+<td style="background-color:#c0c0c0;"> 96
+</td>
+<td> USB_5V_IN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 97
+</td>
+<td> CAM_GPIO
+</td>
+<td style="background-color:#c0c0c0;"> 197
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 97
+</td>
+<td> USB_OTG0_VBUSDET
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 98
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 198
+</td>
+<td> GND
+</td>
+<td style="background-color:#c0c0c0;"> 98
+</td>
+<td> USB_5V_IN
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 99
+</td>
+<td> PWRON_KEY
+</td>
+<td style="background-color:#c0c0c0;"> 199
+</td>
+<td> HDMI_TXDDC_SDA_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 99
+</td>
+<td> GND
+</td></tr>
+<tr>
+<td style="background-color:#c0c0c0;"> 100
+</td>
+<td> PMIC_RESET_KEY
+</td>
+<td style="background-color:#c0c0c0;"> 200
+</td>
+<td> HDMI_TXDDC_SCL_PORT
+</td>
+<td style="background-color:#c0c0c0;"> 100
+</td>
+<td> GND
+</td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.024 seconds
+Real time usage: 0.030 seconds
+Preprocessor visited node count: 31/1000000
+Preprocessor generated node count: 169/1000000
+Post‐expand include size: 1111/2097152 bytes
+Template argument size: 80/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key radxa_wiki-radxa_wiki:pcache:idhash:1163-0!*!0!*!*!*!* and timestamp 20211212103947 and revision id 6771
+ -->
+<div class="hf-footer"></div><div class="hf-nsfooter"></div></div>          </div></div>
+                <!-- /innerbodycontent -->
+                <!-- printfooter -->
+        <div class="printfooter">
+        Retrieved from "<a href="https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;oldid=6771">https://wiki.radxa.com/mw/index.php?title=Rock3/CM3/pinout&amp;oldid=6771</a>"        </div>
+        <!-- /printfooter -->
+                        <!-- catlinks -->
+        <div id="catlinks" class="catlinks catlinks-allhidden"></div>        <!-- /catlinks -->
+                        <div class="visualClear"></div>
+        <!-- debughtml -->
+                <!-- /debughtml -->
+      </div>
+      <!-- /bodyContent -->
+    </section>
+    <!-- /content -->
+
+      <!-- footer -->
+
+      <div id="footer" class="footer container-fluid custom-footer"><script type="text/javascript" src="./Rock3_CM3_pinout - Radxa Wiki_files/plusone.js" gapi_processed="true"></script>
+<div id="footer" class="footer container-fluid">
+	<div class="col-md-12">
+<div class="footer-links">
+    <div class="container">         
+<div class="footer-Title"></div>
+<div class="col-md-4 pull-left">
+<small>Copyright©2021 Radxa Limited | 瑞莎科技</small>
+</div>
+<div class="col-md-8 pull-right">
+<ul id="siteFooterMenu" class="siteFooterMenu">
+<li><a href="https://wiki.radxa.com/">Home</a></li>
+<li><a href="https://wiki.radxa.com/Buy">Buy</a></li>
+<li><a href="http://forum.radxa.com/">Forum</a></li>
+<li><a href="https://wiki.radxa.com/Rock/download">Download</a></li>
+<li><a href="https://wiki.radxa.com/Rock/FAQ">FAQs</a></li>
+<li><a href="https://wiki.radxa.com/Special:SpecialContact">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-md-12">
+<div class="text-center" style="margin-top:20px;">
+<a rel="license" href="https://creativecommons.org/licenses/by/3.0/"></a> Except where otherwise noted, content on this site is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+</div>
+</div>
+    
+</div>
+    <script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"skins.bootstrapskin":"loading","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="./Rock3_CM3_pinout - Radxa Wiki_files/load(6).php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.BootStrapSkinSlideshow"],null,true);
+}</script>
+<script src="./Rock3_CM3_pinout - Radxa Wiki_files/load(7).php"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43717967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":42});
+}</script>
+  
+
+</div></div></div></div><div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
