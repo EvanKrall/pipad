@@ -930,7 +930,7 @@
     (uuid fa004676-3d70-4a02-bcd9-e89efd71de6f)
   )
 
-  (label "VCC_3.3" (at 223.52 50.8 180)
+  (label "VCC_3.3_PCIE" (at 223.52 50.8 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 25d1ce92-6fd2-4086-85c1-818789342ed0)
   )
@@ -1012,7 +1012,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" (id 2) (at 92.71 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 92.71 82.55 0)
+    (property "Datasheet" "${KIPRJMOD}/datasheets/REN_isl91127ir_DST_20160301.pdf" (id 3) (at 92.71 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "21" (uuid 4a2e29e1-ff17-4b18-9084-f7cebdcc93d3))
