@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.127
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -66,16 +66,14 @@
         }
       ],
       "drc_exclusions": [
-        "clearance|124700000|104450000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|125200000|104450000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|127480000|109870000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|127480000|110370000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|139725000|108650000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|139725000|109150000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|141450000|119450000|f7dc85ec-37f4-413c-9341-e3ebe29eb609|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "clearance|141450000|119950000|4b1a1176-0b43-434c-a7f0-13e1f990c294|8a864e4f-e348-485b-9b56-f206ec563f7b",
-        "silk_overlap|133200000|135700000|7bebc7a1-1419-40eb-9e14-2c7cf67d114e|34f1791d-6b8c-48d2-a6b3-3d5470fabca5",
-        "silk_overlap|133200000|135700000|d8af8721-559e-4ecf-8466-20adbbe051e0|34f1791d-6b8c-48d2-a6b3-3d5470fabca5"
+        "courtyards_overlap|94247023|65770001|11be95c5-e26e-4d9a-9125-6f6a76ea88fd|e40002d6-018d-47b2-8a46-40e44df9c589",
+        "courtyards_overlap|94869999|66830001|00afb5a5-e9b3-41bb-b7cf-1c6df86a9ac1|e40002d6-018d-47b2-8a46-40e44df9c589",
+        "silk_over_copper|125800000|208900000|863e45da-1fe6-48a8-8c1d-be702c2c1be0|2dac3182-5f0b-4cda-b1db-074e7fa6eda2",
+        "silk_over_copper|125800000|208900000|863e45da-1fe6-48a8-8c1d-be702c2c1be0|cc491dd0-75d7-453b-8180-488286eddce3",
+        "silk_over_copper|165800000|208900000|863e45da-1fe6-48a8-8c1d-be702c2c1be0|3b0c78a4-701f-4179-829a-fa8f7f3941ac",
+        "silk_over_copper|165800000|208900000|863e45da-1fe6-48a8-8c1d-be702c2c1be0|b58ee507-393c-44f7-a2de-9851a5b9bead",
+        "silk_overlap|94780000|66480000|16833374-bf96-44e3-ade2-39a19c460e84|c5d72e25-b4f5-476a-bbcd-ca393b1517ae",
+        "silk_overlap|94780000|66920000|98b7ef88-add3-495e-ad21-26b191689bb4|c5d72e25-b4f5-476a-bbcd-ca393b1517ae"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -424,8 +422,6 @@
         "nets": [
           "/LVDS/CLKIN+",
           "/LVDS/CLKIN-",
-          "/LVDS/DDC_CLK",
-          "/LVDS/DDC_DATA",
           "/LVDS/RIN0+",
           "/LVDS/RIN0-",
           "/LVDS/RIN1+",
@@ -457,6 +453,8 @@
           "/Dock connector/DP_TX_0P",
           "/Dock connector/DP_TX_1N",
           "/Dock connector/DP_TX_1P",
+          "/Dock connector/USB_PORT_CONN_N",
+          "/Dock connector/USB_PORT_CONN_P",
           "/nvme/REFCLK_N",
           "/nvme/REFCLK_P",
           "/nvme/RX_N",
