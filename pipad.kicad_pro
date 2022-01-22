@@ -44,7 +44,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": false,
+          "45_degree_only": true,
           "min_clearance": 0.127
         }
       },
@@ -91,6 +91,7 @@
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -109,6 +110,7 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
         "track_width": "error",
@@ -125,7 +127,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_copper_edge_clearance": 0.06,
         "min_hole_clearance": 0.0,
         "min_hole_to_hole": 0.25,
@@ -135,17 +137,20 @@
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.44999999999999996
+        "min_via_diameter": 0.44999999999999996,
+        "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
         0.127,
         0.127,
+        0.15,
         0.17,
         0.19,
         0.254,
         0.254,
         0.5,
+        1.0,
         1.5,
         3.0
       ],
@@ -353,6 +358,7 @@
     ],
     "rule_severities": {
       "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
       "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
@@ -479,7 +485,25 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.127,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.254,
+        "line_style": 0,
+        "microvia_diameter": 0.45,
+        "microvia_drill": 0.2,
+        "name": "Composite Video",
+        "nets": [],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.1,
         "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.254,
@@ -561,14 +585,35 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
+        "track_width": 0.1,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.19,
+        "line_style": 0,
+        "microvia_diameter": 0.45,
+        "microvia_drill": 0.2,
+        "name": "audio diff",
+        "nets": [
+          "/codec and amp/INTMIC_N",
+          "/codec and amp/INTMIC_P"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.19,
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6.0
       }
     ],
     "meta": {
-      "version": 0
+      "version": 2
     },
     "net_colors": null
   },
@@ -584,6 +629,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
+    "annotate_start_num": 0,
     "drawing": {
       "default_bus_thickness": 12.0,
       "default_junction_size": 40.0,
@@ -597,20 +643,24 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
+      "label_size_ratio": 0.3,
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.3
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
     "meta": {
-      "version": 0
+      "version": 1
     },
     "net_format_name": "",
     "ngspice": {
+      "fix_include_paths": true,
+      "fix_passive_vals": false,
       "meta": {
         "version": 0
       },
-      "model_mode": 0
+      "model_mode": 0,
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -621,7 +671,7 @@
   },
   "sheets": [
     [
-      "00000000-0000-0000-0000-00006026a3be",
+      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
     ],
     [
@@ -635,6 +685,10 @@
     [
       "4ecc04d7-c0c4-4778-83ba-d295a895ebe9",
       "gt9113_breakout"
+    ],
+    [
+      "0fe5afbd-bd68-4234-ae99-9694af6479f4",
+      "side buttons"
     ],
     [
       "1cd8b29a-6edd-403b-84dd-3cf97c71d81a",
@@ -655,10 +709,6 @@
     [
       "21a15aa6-1f6e-4d00-a58a-2f544b151826",
       "nvme"
-    ],
-    [
-      "0fe5afbd-bd68-4234-ae99-9694af6479f4",
-      "side buttons"
     ],
     [
       "e9fc4bb6-5bde-4905-9630-250663643427",

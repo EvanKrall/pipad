@@ -1,5 +1,5 @@
-(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
-  (symbol "gt9113:GT9113" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "GT9113" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 0 -19.05 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -368,7 +368,14 @@
     )
     (symbol "GT9113_0_1"
       (rectangle (start -16.51 96.52) (end 16.51 -96.52)
-        (stroke (width 0)) (fill (type none))
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "GT9113_1_1"
+      (pin power_in line (at 0 -96.52 90) (length 2.54)
+        (name "PAD" (effects (font (size 1.27 1.27))))
+        (number "89" (effects (font (size 1.27 1.27))))
       )
     )
   )
