@@ -581,7 +581,8 @@
           "/gt9113_breakout/Y6",
           "/gt9113_breakout/Y7",
           "/gt9113_breakout/Y8",
-          "/gt9113_breakout/Y9"
+          "/gt9113_breakout/Y9",
+          "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
