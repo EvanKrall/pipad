@@ -27,3 +27,4 @@ pipad.csv
 #auto_saved_files#
 \#auto_saved_files#
 codec_and_amp.kicad_sch-bak
+*.kicad_sch-bak
