@@ -19,4 +19,5 @@
   (lib (name "NX3DV42")(type "KiCad")(uri "${KIPRJMOD}/library/NX3DV42.kicad_sym")(options "")(descr ""))
   (lib (name "mp3422")(type "KiCad")(uri "${KIPRJMOD}/library/mp3422.kicad_sym")(options "")(descr ""))
   (lib (name "ISL91127IRNZ")(type "KiCad")(uri "${KIPRJMOD}/library/ISL91127IRNZ.kicad_sym")(options "")(descr ""))
+  (lib (name "tps61177")(type "KiCad")(uri "${KIPRJMOD}/library/tps61177.kicad_sym")(options "")(descr ""))
 )

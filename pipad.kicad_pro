@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.254
+          "min_clearance": 0.127
         }
       },
       "diff_pair_dimensions": [
@@ -645,12 +645,12 @@
       "codec and amp"
     ],
     [
-      "4ecc04d7-c0c4-4778-83ba-d295a895ebe9",
-      "gt9113_breakout"
-    ],
-    [
       "1cd8b29a-6edd-403b-84dd-3cf97c71d81a",
       "LVDS"
+    ],
+    [
+      "4ecc04d7-c0c4-4778-83ba-d295a895ebe9",
+      "gt9113_breakout"
     ],
     [
       "eed4aa3c-bec9-4438-9bbd-324cd17b6734",
