@@ -425,8 +425,6 @@
           "/DSI1.D3_P",
           "/LVDS/CLKIN+",
           "/LVDS/CLKIN-",
-          "/LVDS/DDC_CLK",
-          "/LVDS/DDC_DATA",
           "/LVDS/RIN0+",
           "/LVDS/RIN0-",
           "/LVDS/RIN1+",
