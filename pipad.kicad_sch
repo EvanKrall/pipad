@@ -4374,7 +4374,7 @@
       (reference "C43") (unit 1) (value "470nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/b9ad51c5-87a2-458e-85be-d7fffc81f34d"
-      (reference "C44") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (reference "C44") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/369438df-81da-4173-90c2-ed7ac4bdbaa5"
       (reference "C45") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -4478,17 +4478,11 @@
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/00000000-0000-0000-0000-00005fbbb98d"
       (reference "JP2") (unit 1) (value "NC") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/1cd8b29a-6edd-403b-84dd-3cf97c71d81a/6f873648-ff3d-4c25-9fca-3036d0d88c8a"
-      (reference "JP3") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/998b5a63-6aee-4cbd-b6dd-a6b5089cdefa"
       (reference "JP4") (unit 1) (value "SolderJumper_2_Open") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/67b1d894-54ee-4904-8a46-34bf6462b641"
       (reference "JP5") (unit 1) (value "Jumper_2_Bridged") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/cde69679-c2be-4e69-a021-1e2034530269"
-      (reference "JP6") (unit 1) (value "Jumper_NC_Small") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/eed4aa3c-bec9-4438-9bbd-324cd17b6734/90cd298f-f65b-438c-8fb0-e14259452256"
       (reference "JP7") (unit 1) (value "Jumper_2_Bridged") (footprint "Resistor_SMD:R_0402_1005Metric")

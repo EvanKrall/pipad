@@ -1,0 +1,218 @@
+<html>
+<head>
+	<style>
+		.label {
+		  display: inline-block;
+		  width: 1.75in;
+		  height: 0.5in;
+		  border-radius: 2mm;
+		  font-size: 0.1in;
+		  overflow: hidden;
+		  margin-right: 0.2916in;
+		  box-sizing: border-box;
+		  padding: 0.1in;
+		  object-fit: contain;
+		  position: relative;
+		  background-color: white;
+
+		  white-space: pre;
+		}
+
+		.label::first-line {
+			font-weight: bold;
+		}
+
+		.mouser::before {
+			content: "";
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0.2;
+			background: url("https://www.mouser.com/favicon.ico");
+			background-size: 0.375in 0.375in;
+			background-repeat: no-repeat;
+			background-position: 1.3125in 0.0625in;
+		}
+
+		.digikey::before {
+			content: "";
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0.2;
+			background: url("https://www.digikey.com/favicon.ico");
+			background-size: 0.375in 0.375in;
+			background-repeat: no-repeat;
+			background-position: 1.3125in 0.0625in;
+		}
+
+		.arrow::before {
+			content: "";
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0.2;
+			background: url("https://static4.arrow.com/static/img/icons/favicon-96x96.4ad256c379d766bd.png");
+			background-size: 0.375in 0.375in;
+			background-repeat: no-repeat;
+			background-position: 1.3125in 0.0625in;
+		}
+
+		.test {
+			background-color: rgb(230, 230, 230);
+		}
+
+		body {
+			font-size: 0px; /* ignore anything text (whitespace, etc) outside of the spans */
+			margin:  0;
+			max-width:  8.5in;
+			padding: 0;
+			border:  0;
+		}
+
+		@page {
+			margin-left: 0.3125in;
+			margin-top: 0.5in;
+			margin-bottom: 0.25in; /* Actually 0.5, but really we just to prevent the 21st row of labels from printing in the bottom margin */
+			margin-right:  0in;
+			padding:  -0.0625in;
+		}
+		@media print {
+			.label {
+				border: 0px;
+			}
+
+			body {
+				font-size: 0px; /* ignore anything text (whitespace, etc) outside of the spans */
+				background-color: white;
+			}
+
+			.used {
+				background: white;
+				opacity: 0;
+			}
+		}
+		@media screen {
+			body {
+				padding-top:  0.5in;
+				padding-left: 0.3125in;
+				padding-bottom:  0.3125in;
+				border: 1px solid silver;
+				width:  8.5in;
+				margin: 0in;
+				box-sizing: border-box;
+				min-height: 11in;
+				background-color: rgb(240, 240, 240);
+			}
+
+			.used {
+				background: repeating-linear-gradient(
+				  -40deg,
+				  #FFE0E0,
+				  #FFE0E0 2px,
+				  transparent 2px,
+				  transparent 0.1in
+				), repeating-linear-gradient(
+				  50deg,
+				  #FFE0E0,
+				  #FFE0E0 2px,
+				  transparent 2px,
+				  transparent 0.1in
+				), white;
+				opacity: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+<span class="label used"></span>
+<span class="label used"></span>
+<span class="label digikey">MP3422GG-Z<br>IC REG BOOST ADJ 6.5A 14QFN</span>
+<span class="label used"></span>
+<span class="label digikey">NX3DV42GU,115<br>IC USB SWITCH DPDT XQFN10</span>
+<span class="label digikey">TPS61177ARGRR<br>IC WLED DRIVER 6CH 20VQFN</span>
+<span class="label digikey">TPD4E02B04QDQARQ1<br>TVS DIODE 3.6VWM 8.8VC 10USON</span>
+<span class="label digikey">BDCD002520101R0MS1<br>FIXED IND 1UH 3A 78 m&Omega; SMD</span>
+<span class="label digikey">CL21A226MQCLQNC<br>CAP CER 22&mu;F 6.3V X5R 0805</span>
+<span class="label digikey">CL21A106KOCLRNC<br>CAP CER 10&mu;F 16V X5R 0805</span>
+<span class="label digikey">PAM8302AASCR<br>IC AMP CLASS D MONO 2.5W 8MSOP</span>
+<span class="label digikey">SBA0540Q_R1_00001<br>Schottky Diode DFN 2L</span>
+<span class="label digikey">LQH3NPZ100MGRL<br>FIXED IND 10UH 670MA 336m&Omega; SMD</span>
+<span class="label digikey">CL21A475KLCLQNC<br>CAP CER 4.7&mu;F 35V X5R 0805</span>
+<span class="label mouser">SM3ZS067U215-NUT1-R2500<br/>M.2 Threaded Standoff 2.15MM</span>
+<span class="label mouser">FSA2275AUMX<br/>Audio Switch IC</span>
+<span class="label mouser">ISL91127IRNZ-T7A<br/>Buck/Boost adj</span>
+<span class="label mouser">MAX16150AUT+T<br/>Pushbutton on/off controller</span>
+<span class="label mouser">TCA9802DGKT<br/>i2c level translator</span>
+<span class="label mouser">246411067101894M<br/>M.2 Connector H2.3 Key M</span>
+<span class="label mouser">MIC5365-3.0YD5-TR<br/>3.0V 150mA LDO</span>
+<span class="label digikey">TLV320AIC3206IRSBR<br>IC STEREO AUD CODEC LP 40WQFN</span>
+<span class="label digikey">BDHE002520122R2MQ1<br>FIXED IND 2.2UH 2.9A 83m&Omega; SMD</span>
+<span class="label digikey">MLZ2012N4R7LT000<br>FIXED IND 4.7UH 600MA 180m&Omega; SM</span>
+<span class="label digikey">EMK107ABJ475MA-T<br>CAP CER 4.7&mu;F 16V X5R 0603</span>
+<span class="label digikey">CL21A226MOQNNNE<br>CAP CER 22&mu;F 16V X5R 0805</span>
+<span class="label digikey">RMCF0402FT5K23<br>RES 5.23K&Omega; 1% 1/16W 0402</span>
+<span class="label digikey">RMCF0402FT30K1<br>RES 30.1K&Omega; 1% 1/16W 0402</span>
+<span class="label digikey">NSR10F20NXT5G<br>Schottky Diode 20V 1A 2DSN</span>
+<span class="label digikey">LMK105BJ225KV-F<br>CAP CER 2.2&mu;F 10V X5R 0402</span>
+<span class="label digikey">CC0402KRX7R9BB472<br>CAP CER 4700PF 50V X7R 0402</span>
+<span class="label digikey">CL05A474KQ5NNNC<br>CAP CER 0.47&mu;F 6.3V X5R 0402</span>
+<span class="label digikey">PMEG4010EPK,315<br>Schottky Diode 40V 1A DFN1608D-2</span>
+<span class="label digikey">SFW15R-2STE1LF<br>CONN FFC FPC TOP 15POS 1MM R/A</span>
+<span class="label digikey">MCR01MRTF5362<br>RES 53.6K&Omega; 1% 1/16W 0402</span>
+<span class="label digikey">RC0402JR-071M3L<br>RES 1.3M&Omega; 5% 1/16W 0402</span>
+<span class="label digikey">WR04X105 JTL<br>RES 1M&Omega; 5% 1/16W 0402</span>
+<span class="label digikey">RMCF0402FT143K<br>RES 143K&Omega; 1% 1/16W 0402</span>
+<span class="label digikey">FSA2275UMX<br>IC SWITCH DUAL DPDT 12UMLP</span>
+<span class="label digikey">BQ25895MRTWR<br>IC BATT CHG LI-ION 1CELL 24WQFN</span>
+<span class="label digikey">CC0402KRX7R8BB473<br>CAP CER 0.047&mu;F 25V X7R 0402</span>
+<span class="label digikey">CC1206MKX5R5BB107<br>CAP CER 100&mu;F 6.3V X5R 1206</span>
+<span class="label digikey">TPD4S010DQAR<br>TVS DIODE 5.5VWM 10USON</span>
+<span class="label arrow">SN65DSI83TPAPRQ1<br>MIPI-DSI to LVDS</span>
+<span class="label arrow">TPS61176RTER<br>LED Backlight Controller 6ch</span>
+<span class="label arrow">MIC5504-1.8YM5-TR<br>LDO 1.8V 300mA SOT-23-5</span>
+<span class="label arrow">NTB0102GT,115<br>2-bit bidirectional level translator</span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label used"></span>
+<span class="label"></span>
+<span class="label"></span>
+<span class="label used"></span>
+</body>
