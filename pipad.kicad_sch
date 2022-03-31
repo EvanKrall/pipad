@@ -4578,10 +4578,10 @@
       (reference "U1") (unit 1) (value "TLV320AIC3206IRSBR") (footprint "footprints:TLV320AIC3206IRSBR")
     )
     (path "/00000000-0000-0000-0000-00006026a3be/e9fc4bb6-5bde-4905-9630-250663643427/00000000-0000-0000-0000-0000603fddd8"
-      (reference "U2") (unit 1) (value "TPA2006D1DRBR") (footprint "footprints:TPA2006D1DRBR")
+      (reference "U2") (unit 1) (value "TPA2006D1DRBR") (footprint "footprints:TPA2006_PAM8302")
     )
     (path "/00000000-0000-0000-0000-00006026a3be/00000000-0000-0000-0000-000060276bea/00000000-0000-0000-0000-0000603fddd8"
-      (reference "U3") (unit 1) (value "TPA2006D1DRBR") (footprint "footprints:TPA2006D1DRBR")
+      (reference "U3") (unit 1) (value "TPA2006D1DRBR") (footprint "footprints:TPA2006_PAM8302")
     )
     (path "/00000000-0000-0000-0000-00006026a3be/96f87cea-3298-4597-a25e-a3df442883f6"
       (reference "U4") (unit 1) (value "FSA2275UMX") (footprint "footprints:FSA2275")
