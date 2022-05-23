@@ -44,4 +44,9 @@
   (pad "6" smd rect (at 6 0) (size 0.6096 0.8382) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 35384487-efca-45b0-bbdf-84fc5c526f64))
   (pad "7" smd rect (at 7.15 3.775001 90) (size 0.8128 0.7112) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 88f9bd18-e046-4310-a064-c0bde649dc94))
   (pad "8" smd rect (at -1.15 3.775001 90) (size 0.8128 0.7112) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2505c719-4f81-44f4-a7a9-014d02ea119f))
+  (model "${KIPRJMOD}/models.3dshapes/781715006.stp"
+    (offset (xyz 3 -2.2 1.4))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )

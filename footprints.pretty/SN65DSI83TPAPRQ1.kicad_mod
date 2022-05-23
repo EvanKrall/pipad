@@ -992,4 +992,9 @@
   (pad "65" thru_hole circle (at 3.250001 3.250001) (size 0.499999 0.499999) (drill 0.2032) (layers *.Cu *.Mask) (tstamp 51016474-0ffa-46ca-b612-136a4858b65d))
   (pad "65" thru_hole circle (at -3.250001 -3.250001) (size 0.499999 0.499999) (drill 0.2032) (layers *.Cu *.Mask) (tstamp b98c08b8-b248-4a9e-8352-e5b8df5d3931))
   (pad "65" thru_hole circle (at -3.250001 3.250001) (size 0.499999 0.499999) (drill 0.2032) (layers *.Cu *.Mask) (tstamp c484bc60-26bb-4e23-976d-cd286242d2fe))
+  (model "${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/HTQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

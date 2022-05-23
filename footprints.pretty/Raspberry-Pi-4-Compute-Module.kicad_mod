@@ -269,14 +269,19 @@
   (pad "198" smd rect (at 35 -12.1 270) (size 0.2 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a1d57308-7ab0-419e-b76e-bc067563d003))
   (pad "199" smd rect (at 31.92 -11.7 270) (size 0.2 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp dafe484d-e069-48cf-8e0d-a19cb2f09014))
   (pad "200" smd rect (at 35 -11.7 270) (size 0.2 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 23a6bd14-1bcc-49c0-8f08-22c1645dd637))
-  (model "./CM4.3dshapes/DF40C-100DS.stp"
+  (model "./models.3dshapes/DF40C-100DS.stp"
     (offset (xyz -0.46 15.38 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
   )
-  (model "./CM4IO.3dshapes/DF40C-100DS.stp"
+  (model "./models.3dshapes/DF40C-100DS.stp"
     (offset (xyz 33.46 15.38 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
+  )
+  (model "${KIPRJMOD}/models.3dshapes/CM4.step" hide
+    (offset (xyz 52.5 -3.5 1.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
   )
 )

@@ -1,5 +1,7 @@
-(footprint "MP3422GG-P" (version 20210228) (generator pcbnew) (layer "F.Cu")
+(footprint "MP3422GG-P" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
   (tedit 613ADBE0)
+  (attr smd)
   (fp_text reference "REF**" (at 0.1 -2.4 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cdb15e30-c6f4-4f5b-b591-6340f6aef045)
@@ -25,4 +27,9 @@
   (pad "13" smd roundrect (at 0 -0.25) (size 0.7 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0)
     (chamfer_ratio 0.5) (chamfer top_left) (tstamp 61c4473f-62b5-4d3d-9f40-8ea12c87421f))
   (pad "14" smd rect (at 0 0.25) (size 0.7 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 06a142a9-f3db-41fe-a88a-a9e88bff6b22))
+  (model "${KIPRJMOD}/models.3dshapes/MP3422GG.STEP"
+    (offset (xyz -219.59 -170.75 0.1))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

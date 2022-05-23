@@ -90,4 +90,14 @@
   (pad "74" smd rect (at 9 4.005) (size 0.3 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b146160c-dd9f-463a-8aa3-08b1f71e9fbf))
   (pad "75" smd rect (at 9.25 -3.505) (size 0.3 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 31cb5f21-57ca-407a-8fd6-86935439cb04))
   (pad "GND" thru_hole circle (at 0 30) (size 5 5) (drill 2.6) (layers *.Cu *.Mask) (tstamp 6b90ce12-c6f3-446f-8d33-cfced99d6af0))
+  (model "${KIPRJMOD}/models.3dshapes/206411067101m.stp"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
+  (model "${KIPRJMOD}/models.3dshapes/m_dot_2.step"
+    (offset (xyz 11 0 0.3))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )

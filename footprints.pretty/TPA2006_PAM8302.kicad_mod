@@ -121,4 +121,14 @@
     ) (tstamp 6e0dfbb5-c16b-4202-b0c2-e20346777f18))
   (pad "9" thru_hole circle (at 0 0.3937) (size 0.508 0.508) (drill 0.254) (layers *.Cu *.Mask) (tstamp b54e97d0-ffea-40a7-a0c5-41bc97173618))
   (pad "9" thru_hole circle (at 0 -0.3937) (size 0.508 0.508) (drill 0.254) (layers *.Cu *.Mask) (tstamp c2f99456-e82a-4eed-a9fa-ba19ca94df99))
+  (model "${KIPRJMOD}/models.3dshapes/DRB0008A.stp"
+    (opacity 0.9500)    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

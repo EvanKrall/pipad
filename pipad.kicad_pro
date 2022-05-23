@@ -685,10 +685,6 @@
       "gt9113_breakout"
     ],
     [
-      "0fe5afbd-bd68-4234-ae99-9694af6479f4",
-      "side buttons"
-    ],
-    [
       "1cd8b29a-6edd-403b-84dd-3cf97c71d81a",
       "LVDS"
     ],
@@ -707,6 +703,10 @@
     [
       "21a15aa6-1f6e-4d00-a58a-2f544b151826",
       "nvme"
+    ],
+    [
+      "0fe5afbd-bd68-4234-ae99-9694af6479f4",
+      "side buttons"
     ],
     [
       "e9fc4bb6-5bde-4905-9630-250663643427",
