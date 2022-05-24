@@ -883,7 +883,7 @@
   )
 
   (no_connect (at 364.49 110.49) (uuid caa707e1-72b4-4faa-9148-34ea6d27cb4e))
-  (no_connect (at 364.49 113.03) (uuid caa707e1-72b4-4faa-9148-34ea6d27cb4e))
+  (no_connect (at 364.49 113.03) (uuid caa707e1-72b4-4faa-9148-34ea6d27cb4f))
 
   (wire (pts (xy 265.43 97.79) (xy 269.24 97.79))
     (stroke (width 0) (type solid) (color 0 0 0 0))

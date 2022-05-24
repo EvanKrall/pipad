@@ -44,7 +44,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": true,
+          "45_degree_only": false,
           "min_clearance": 0.127
         }
       },
@@ -65,7 +65,9 @@
           "width": 0.20574
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "copper_edge_clearance|122700000|117600000|53efebf5-8fc3-46ac-bf19-5d6f39dc6af2|4396a726-4b64-4576-8d51-cce9b13fbf69"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -376,7 +378,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "footprints"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
