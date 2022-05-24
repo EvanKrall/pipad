@@ -1,5 +1,5 @@
-(kicad_symbol_lib (version 20201005) (generator kicad_symbol_editor)
-  (symbol "ISL91127IRNZ:ISL91127IRNZ" (in_bom yes) (on_board yes)
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "ISL91127IRNZ" (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 0 12.7 0)
       (effects (font (size 1.27 1.27)))
     )
@@ -13,6 +13,10 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (symbol "ISL91127IRNZ_0_0"
+      (pin no_connect line (at 0 2.54 90) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
       (pin power_in line (at 1.27 -12.7 90) (length 2.54)
         (name "EPAD" (effects (font (size 1.27 1.27))))
         (number "21" (effects (font (size 1.27 1.27))))
@@ -20,7 +24,8 @@
     )
     (symbol "ISL91127IRNZ_0_1"
       (rectangle (start -10.16 16.51) (end 10.16 -10.16)
-        (stroke (width 0.1524)) (fill (type none))
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
       )
     )
     (symbol "ISL91127IRNZ_1_1"

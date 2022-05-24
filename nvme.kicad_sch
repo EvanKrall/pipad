@@ -156,6 +156,10 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "ISL91127IRNZ_0_0"
+        (pin no_connect line (at 0 2.54 90) (length 2.54) hide
+          (name "NC" (effects (font (size 1.27 1.27))))
+          (number "16" (effects (font (size 1.27 1.27))))
+        )
         (pin power_in line (at 1.27 -12.7 90) (length 2.54)
           (name "EPAD" (effects (font (size 1.27 1.27))))
           (number "21" (effects (font (size 1.27 1.27))))
@@ -1105,6 +1109,7 @@
     (property "Datasheet" "${KIPRJMOD}/datasheets/REN_isl91127ir_DST_20160301.pdf" (id 3) (at 92.71 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (pin "16" (uuid 9afcccaa-1d86-4159-a0d9-7f7a83b4a275))
     (pin "21" (uuid 4a2e29e1-ff17-4b18-9084-f7cebdcc93d3))
     (pin "1" (uuid 42783673-93f7-4cac-9c3c-bbe954bce081))
     (pin "10" (uuid fbbcd100-be82-4230-bbec-5ade52f1c754))
