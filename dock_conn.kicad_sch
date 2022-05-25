@@ -1175,10 +1175,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 33e02eed-cb7a-42af-bf89-1a19d996218c)
   )
-  (label "CONN_CLK_32K_X17" (at 130.81 80.01 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3cec5455-8778-4a1e-9005-a8b466048a75)
-  )
 
   (hierarchical_label "PORT_FW_PWR_FLT" (shape input) (at 144.78 90.17 0)
     (effects (font (size 1.27 1.27)) (justify left))
