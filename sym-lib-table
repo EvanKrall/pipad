@@ -1,4 +1,5 @@
 (sym_lib_table
+  (version 7)
   (lib (name "TPA2006D1DRBR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TPA2006D1DRBR.kicad_sym")(options "")(descr ""))
   (lib (name "TLV320AIC3104IRHBT")(type "KiCad")(uri "${KIPRJMOD}/symbols/TLV320AIC3104IRHBT.kicad_sym")(options "")(descr ""))
   (lib (name "FSA2275UMX")(type "KiCad")(uri "${KIPRJMOD}/symbols/FSA2275UMX.kicad_sym")(options "")(descr ""))
@@ -22,4 +23,5 @@
   (lib (name "max16150aut")(type "KiCad")(uri "${KIPRJMOD}/library/max16150aut.kicad_sym")(options "")(descr ""))
   (lib (name "tps61177")(type "KiCad")(uri "${KIPRJMOD}/library/tps61177.kicad_sym")(options "")(descr ""))
   (lib (name "RV-8263")(type "KiCad")(uri "${KIPRJMOD}/symbols/RV-8263.kicad_sym")(options "")(descr ""))
+  (lib (name "TCA6408ARSVR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TCA6408ARSVR.kicad_sym")(options "")(descr ""))
 )
