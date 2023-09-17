@@ -7,17 +7,7 @@ name: KiBot
 on:
   workflow_dispatch:
   push:
-    paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
-    - "**/*kibot.yml"
   pull_request:
-    paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
-    - "**/*kibot.yml"
 
 env:
   schema: "pipad.kicad_sch"
@@ -47,7 +37,7 @@ jobs:
 # documentation
   docs:
     runs-on: ubuntu-latest
-    needs: [ERC]
+    # needs: [ERC]
     container:
       image: setsoft/kicad_auto:ki7
     steps:
@@ -68,7 +58,7 @@ jobs:
 # fabrications
   gerbers:
     runs-on: ubuntu-latest
-    needs: [DRC]
+    # needs: [DRC]
     container:
       image: setsoft/kicad_auto:ki7
     steps:
@@ -89,7 +79,7 @@ jobs:
 # cad
   cad:
     runs-on: ubuntu-latest
-    needs: [DRC]
+    # needs: [DRC]
     container:
       image: setsoft/kicad_auto:ki7
     steps:
@@ -110,7 +100,7 @@ jobs:
 # images
   render:
     runs-on: ubuntu-latest
-    needs: [DRC]
+    # needs: [DRC]
     container:
       image: setsoft/kicad_auto:ki7
     steps:
@@ -128,3 +118,27 @@ jobs:
             ${{env.dir}}/img/**
             !${{env.dir}}/**/*.ogv
             !${{env.dir}}/**/*.log
+
+
+  release:
+    needs: [render, gerbers, cad, docs, DRC, ERC]
+    runs-on: ubuntu-latest
+    steps:
+      - name: download all artifacts
+        uses: actions/download-artifact@v3.0.2
+      - name: find .
+        run: find .
+      - name: tarballs
+        run: for dir in pipad_{docs,cad,gerbers,img}; do tar czf "${dir}.tgz" "${dir}"; done
+      - name: create release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.run_id }} (${{ github.sha }})
+          tag_name: v${{ github.run_id }}
+          target_commitish: ${{ github.ref }}
+          files: |
+            pipad_cad.tgz
+            pipad_docs.tgz
+            pipad_gerbers.tgz
+            pipad_img.tgz
+          fail_on_unmatched_files: true
