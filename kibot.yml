@@ -20,7 +20,10 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
 #  update_qr: true
-  # filters:
+  filters:
+    - filter: 'Footprint does not match copy in library'
+      regex: 'Footprint .* does not match copy in library .*'
+      error: 'lib_footprint_mismatch'
   #   - filter: 'suppress courtyards overlap'
   #     regex: 'Courtyards overlap'
   #     error: 'courtyards_overlap'
